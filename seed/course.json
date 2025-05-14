@@ -1,0 +1,2052 @@
+[
+    {
+        "name": "Introduction to Prompt Engineering",
+        "description": "Master the fundamentals of prompt engineering to guide generative AI for accurate BI outputs.",
+        "specialisation_id": 1,
+        "data": {
+            "price": 10,
+            "number_of_hours": 20,
+            "rating": 4.7,
+            "number_of_reviews": 85,
+            "skills_earned": [
+                "Basic Prompt Design",
+                "Context Tuning",
+                "Token Management",
+                "Prompt Optimization"
+            ],
+            "about": "Gain hands-on experience crafting effective prompts for BI tasks using AI tools.",
+            "outcome": [
+                "Write clear, effective prompts",
+                "Optimize prompts for data queries",
+                "Reduce iteration cycles"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Jane Smith",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. John Doe",
+                    "university": "Stanford University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Harvard Business School"
+            },
+            "number_of_modules": 5,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Perfect intro to prompt engineering",
+                    "review": "The step-by-step exercises demystified prompt workflows for me.",
+                    "created_at": "2025-03-05T09:00:00Z",
+                    "author": "Karen White"
+                },
+                {
+                    "message": "Great for BI newcomers",
+                    "review": "I built my first usable prompt-based report generator by the end of week one.",
+                    "created_at": "2025-03-12T15:30:00Z",
+                    "author": "Tom Brooks"
+                },
+                {
+                    "message": "Concise and practical",
+                    "review": "Loved how each module had clear objectives and hands-on tasks.",
+                    "created_at": "2025-03-18T11:45:00Z",
+                    "author": "Sonia Patel"
+                },
+                {
+                    "message": "Well-structured content",
+                    "review": "The quizzes reinforced my learning before moving on to the next section.",
+                    "created_at": "2025-03-22T13:20:00Z",
+                    "author": "Ethan Murphy"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Generative Narrative Techniques for BI",
+        "description": "Learn to generate compelling narratives and summaries from BI data using generative AI models.",
+        "specialisation_id": 1,
+        "data": {
+            "price": 15,
+            "number_of_hours": 25,
+            "rating": 4.8,
+            "number_of_reviews": 102,
+            "skills_earned": [
+                "Narrative Generation",
+                "Summarization",
+                "Data Storytelling",
+                "Tone Control"
+            ],
+            "about": "Transform raw BI data into engaging narratives and executive summaries.",
+            "outcome": [
+                "Generate data-driven narratives",
+                "Customize report tone",
+                "Automate summary workflows"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Jane Smith",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. John Doe",
+                    "university": "Stanford University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Harvard Business School"
+            },
+            "number_of_modules": 6,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Elevated our report quality",
+                    "review": "The narrative techniques gave our executive summaries new clarity.",
+                    "created_at": "2025-04-01T11:20:00Z",
+                    "author": "Linda Evans"
+                },
+                {
+                    "message": "Engaging and practical",
+                    "review": "Loved the live demos showing before/after narrative examples.",
+                    "created_at": "2025-04-05T08:45:00Z",
+                    "author": "Marcus Li"
+                },
+                {
+                    "message": "Actionable insights",
+                    "review": "The tips on structuring summaries were immediately applicable.",
+                    "created_at": "2025-04-10T14:55:00Z",
+                    "author": "Priya Deshmukh"
+                },
+                {
+                    "message": "Well-paced modules",
+                    "review": "Each lesson built perfectly on the previous one, no confusion.",
+                    "created_at": "2025-04-12T16:30:00Z",
+                    "author": "Omar Hassan"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Automated Reporting with AI Pipelines",
+        "description": "Build end-to-end AI pipelines to automate BI report generation and distribution.",
+        "specialisation_id": 1,
+        "data": {
+            "price": 20,
+            "number_of_hours": 30,
+            "rating": 4.6,
+            "number_of_reviews": 150,
+            "skills_earned": [
+                "Pipeline Orchestration",
+                "Model Serving",
+                "Report Scheduling",
+                "Notification Systems"
+            ],
+            "about": "Implement AI pipelines that fetch data, generate reports, and deliver them automatically.",
+            "outcome": [
+                "Set up data ingestion pipelines",
+                "Integrate AI model inference",
+                "Schedule automated reports"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Jane Smith",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. John Doe",
+                    "university": "Stanford University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Harvard Business School"
+            },
+            "number_of_modules": 8,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Saved hours every month",
+                    "review": "Our team now spends zero time manually generating reports.",
+                    "created_at": "2025-04-10T14:10:00Z",
+                    "author": "Natalie Ross"
+                },
+                {
+                    "message": "Pipeline clarity",
+                    "review": "The module on error handling was especially helpful.",
+                    "created_at": "2025-04-15T16:50:00Z",
+                    "author": "Daniel Kim"
+                },
+                {
+                    "message": "Robust design",
+                    "review": "The course covers retries and logging best practices in depth.",
+                    "created_at": "2025-04-18T09:25:00Z",
+                    "author": "Anya Petrova"
+                },
+                {
+                    "message": "Great integration tips",
+                    "review": "Loved the walkthrough for connecting to our internal data warehouse.",
+                    "created_at": "2025-04-20T12:00:00Z",
+                    "author": "Luis Mendoza"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Real-time BI Dashboard Integration",
+        "description": "Integrate generative AI into real-time dashboards to provide live insights and analytics.",
+        "specialisation_id": 1,
+        "data": {
+            "price": 25,
+            "number_of_hours": 40,
+            "rating": 4.9,
+            "number_of_reviews": 200,
+            "skills_earned": [
+                "WebSocket Integration",
+                "Real-time Processing",
+                "Dashboard Frameworks",
+                "AI Inference"
+            ],
+            "about": "Embed AI-generated insights into live dashboards for real-time decision making.",
+            "outcome": [
+                "Implement WebSocket data streams",
+                "Deploy AI inference services",
+                "Embed dynamic charts"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Jane Smith",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. John Doe",
+                    "university": "Stanford University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Harvard Business School"
+            },
+            "number_of_modules": 10,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Truly real-time",
+                    "review": "Our dashboards now update with AI insights every minute.",
+                    "created_at": "2025-04-20T10:15:00Z",
+                    "author": "Olivia Parker"
+                },
+                {
+                    "message": "Smooth integration",
+                    "review": "Examples with React and D3 made implementation straightforward.",
+                    "created_at": "2025-04-22T12:40:00Z",
+                    "author": "Ethan Zhao"
+                },
+                {
+                    "message": "Highly responsive",
+                    "review": "Latency was under 200ms even with heavy loads.",
+                    "created_at": "2025-04-25T14:50:00Z",
+                    "author": "Maya Singh"
+                },
+                {
+                    "message": "Excellent demos",
+                    "review": "The real-time filtering lab was exactly what I needed.",
+                    "created_at": "2025-04-28T09:10:00Z",
+                    "author": "Carlos Alvarez"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Advanced AI Models for Predictive BI",
+        "description": "Dive into advanced generative and predictive models to forecast trends and anomalies in BI data.",
+        "specialisation_id": 1,
+        "data": {
+            "price": 30,
+            "number_of_hours": 45,
+            "rating": 4.7,
+            "number_of_reviews": 120,
+            "skills_earned": [
+                "Time Series Forecasting",
+                "Anomaly Detection",
+                "GANs for Data Synthesis",
+                "Model Evaluation"
+            ],
+            "about": "Explore and apply advanced AI architectures to predictive BI use cases.",
+            "outcome": [
+                "Build forecasting models",
+                "Detect data anomalies",
+                "Synthesize sample data"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Jane Smith",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. John Doe",
+                    "university": "Stanford University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Harvard Business School"
+            },
+            "number_of_modules": 12,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Forecasting made easy",
+                    "review": "I deployed a time-series model that improved our sales predictions by 15%.",
+                    "created_at": "2025-04-25T09:30:00Z",
+                    "author": "Priya Singh"
+                },
+                {
+                    "message": "Anomaly detection brilliance",
+                    "review": "The GAN-based lab let me generate synthetic data for edge cases.",
+                    "created_at": "2025-04-28T14:05:00Z",
+                    "author": "Luis Fernández"
+                },
+                {
+                    "message": "In-depth content",
+                    "review": "Loved the section on hyperparameter tuning for forecasting models.",
+                    "created_at": "2025-05-01T11:15:00Z",
+                    "author": "Zara Khan"
+                },
+                {
+                    "message": "Practical experiments",
+                    "review": "The anomaly detection project was challenging but highly educational.",
+                    "created_at": "2025-05-03T13:45:00Z",
+                    "author": "Henry O’Neill"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Clustering and Segmentation Masterclass",
+        "description": "Deep dive into clustering algorithms and segmentation strategies to uncover hidden patterns in data.",
+        "specialisation_id": 2,
+        "data": {
+            "price": 30,
+            "number_of_hours": 30,
+            "rating": 4.7,
+            "number_of_reviews": 95,
+            "skills_earned": [
+                "K-Means Clustering",
+                "Hierarchical Clustering",
+                "DBSCAN",
+                "Silhouette Analysis"
+            ],
+            "about": "Learn to apply and evaluate clustering techniques on diverse datasets using Python and scikit-learn.",
+            "outcome": [
+                "Implement and tune k-means models",
+                "Perform density-based clustering with DBSCAN",
+                "Assess cluster quality using silhouette scores",
+                "Apply segmentation to real-world business cases"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Maria Garcia",
+                    "university": "University of California, Berkeley",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Ahmed Khan",
+                    "university": "Carnegie Mellon University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "UC Berkeley School of Information"
+            },
+            "number_of_modules": 7,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Great clustering module",
+                    "review": "Detailed lab on DBSCAN clarified clustering concepts.",
+                    "created_at": "2025-03-15T10:00:00Z",
+                    "author": "Sophia Lee"
+                },
+                {
+                    "message": "Excellent evaluation techniques",
+                    "review": "Silhouette analysis lab helped me choose the right k.",
+                    "created_at": "2025-03-18T14:30:00Z",
+                    "author": "David Chen"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Advanced Classification Techniques",
+        "description": "Master classification algorithms from decision trees to ensemble methods for predictive modeling.",
+        "specialisation_id": 2,
+        "data": {
+            "price": 30,
+            "number_of_hours": 35,
+            "rating": 4.8,
+            "number_of_reviews": 110,
+            "skills_earned": [
+                "Decision Trees",
+                "Random Forests",
+                "Gradient Boosting",
+                "Model Evaluation Metrics"
+            ],
+            "about": "Explore and implement advanced classification techniques on real datasets using scikit-learn.",
+            "outcome": [
+                "Train and tune tree-based models",
+                "Implement bagging and boosting pipelines",
+                "Evaluate classifiers with precision, recall, and ROC",
+                "Deploy classification workflows"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Maria Garcia",
+                    "university": "University of California, Berkeley",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Ahmed Khan",
+                    "university": "Carnegie Mellon University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "UC Berkeley School of Information"
+            },
+            "number_of_modules": 8,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Highly practical examples",
+                    "review": "The ensemble methods section gave me confidence to use Random Forests at work.",
+                    "created_at": "2025-03-20T12:15:00Z",
+                    "author": "Priya Sharma"
+                },
+                {
+                    "message": "Clear and concise",
+                    "review": "Loved the exercises on tuning hyperparameters for XGBoost.",
+                    "created_at": "2025-03-22T16:40:00Z",
+                    "author": "Miguel Torres"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Association Rule Mining & Recommendation Systems",
+        "description": "Learn to extract association rules and build recommendation engines from transactional data.",
+        "specialisation_id": 2,
+        "data": {
+            "price": 20,
+            "number_of_hours": 25,
+            "rating": 4.6,
+            "number_of_reviews": 80,
+            "skills_earned": [
+                "Apriori Algorithm",
+                "FP-Growth",
+                "Lift and Confidence",
+                "Collaborative Filtering"
+            ],
+            "about": "Discover frequent itemsets and generate rules to recommend products effectively.",
+            "outcome": [
+                "Extract frequent patterns with Apriori",
+                "Implement FP-Growth for large datasets",
+                "Generate and evaluate association rules",
+                "Build a basic collaborative filtering system"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Maria Garcia",
+                    "university": "University of California, Berkeley",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Ahmed Khan",
+                    "university": "Carnegie Mellon University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "UC Berkeley School of Information"
+            },
+            "number_of_modules": 6,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Great introduction to rules",
+                    "review": "The hands-on labs made Apriori and FP-Growth simple to understand.",
+                    "created_at": "2025-03-10T09:45:00Z",
+                    "author": "Laura Nguyen"
+                },
+                {
+                    "message": "Useful for retail analytics",
+                    "review": "I applied these techniques to our sales data and improved upsell recommendations.",
+                    "created_at": "2025-03-14T13:20:00Z",
+                    "author": "Ravi Patel"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Text Mining and Web Scraping for Data Mining",
+        "description": "Gather and analyze textual and web data to extract insights and build predictive models.",
+        "specialisation_id": 2,
+        "data": {
+            "price": 20,
+            "number_of_hours": 40,
+            "rating": 4.7,
+            "number_of_reviews": 90,
+            "skills_earned": [
+                "Web Scraping with BeautifulSoup",
+                "Text Preprocessing",
+                "TF-IDF Vectorization",
+                "Topic Modeling (LDA)"
+            ],
+            "about": "Learn to scrape web data and perform text mining techniques to uncover actionable insights.",
+            "outcome": [
+                "Scrape and parse HTML data",
+                "Clean and tokenize text",
+                "Apply TF-IDF and LDA models",
+                "Perform sentiment analysis"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Maria Garcia",
+                    "university": "University of California, Berkeley",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Ahmed Khan",
+                    "university": "Carnegie Mellon University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "UC Berkeley School of Information"
+            },
+            "number_of_modules": 9,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Powerful scraping techniques",
+                    "review": "The web scraping labs gave me everything I needed to collect data at scale.",
+                    "created_at": "2025-03-08T11:10:00Z",
+                    "author": "Elena Morales"
+                },
+                {
+                    "message": "Text mining clarity",
+                    "review": "Topic modeling section helped me segment articles by theme.",
+                    "created_at": "2025-03-12T15:05:00Z",
+                    "author": "Omar Rahman"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Supervised Learning Essentials",
+        "description": "Learn core supervised algorithms—regression, classification, and evaluation metrics—through hands-on Python projects.",
+        "specialisation_id": 3,
+        "data": {
+            "price": 20,
+            "number_of_hours": 35,
+            "rating": 4.7,
+            "number_of_reviews": 110,
+            "skills_earned": [
+                "Linear Regression",
+                "Logistic Regression",
+                "Decision Trees",
+                "Model Evaluation"
+            ],
+            "about": "Build, train, and evaluate supervised models on real datasets using scikit-learn and Python.",
+            "outcome": [
+                "Implement regression and classification pipelines",
+                "Optimize model performance with cross-validation",
+                "Interpret model coefficients and feature importances"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Emily Zhang",
+                    "university": "University of Oxford",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Li Wei",
+                    "university": "Tsinghua University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Oxford Department of Computer Science"
+            },
+            "number_of_modules": 7,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Comprehensive and clear",
+                    "review": "The regression labs gave me a solid understanding of model fitting.",
+                    "created_at": "2025-02-20T10:15:00Z",
+                    "author": "Oliver Bennett"
+                },
+                {
+                    "message": "Great practical focus",
+                    "review": "I deployed a classification API by following the project walkthrough.",
+                    "created_at": "2025-02-25T14:30:00Z",
+                    "author": "Aisha Khan"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Unsupervised Learning in Practice",
+        "description": "Master clustering, dimensionality reduction, and anomaly detection techniques with real-world datasets.",
+        "specialisation_id": 3,
+        "data": {
+            "price": 25,
+            "number_of_hours": 30,
+            "rating": 4.6,
+            "number_of_reviews": 95,
+            "skills_earned": [
+                "K-Means & Hierarchical Clustering",
+                "PCA & t-SNE",
+                "DBSCAN",
+                "Anomaly Detection"
+            ],
+            "about": "Discover hidden structures in data and reduce dimensionality for visualization and modeling.",
+            "outcome": [
+                "Apply clustering algorithms to segment data",
+                "Perform PCA and t-SNE for feature reduction",
+                "Implement DBSCAN for noise-resistant clustering"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Emily Zhang",
+                    "university": "University of Oxford",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Li Wei",
+                    "university": "Tsinghua University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Oxford Department of Computer Science"
+            },
+            "number_of_modules": 6,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Insightful and engaging",
+                    "review": "The PCA module helped me visualize customer segments effectively.",
+                    "created_at": "2025-03-01T09:45:00Z",
+                    "author": "Marcus Liu"
+                },
+                {
+                    "message": "Well-structured content",
+                    "review": "The anomaly detection project was directly applicable to my security use case.",
+                    "created_at": "2025-03-05T11:20:00Z",
+                    "author": "Nina Patel"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Reinforcement Learning Fundamentals",
+        "description": "Introduction to reinforcement learning concepts and algorithms, including Q-learning and policy gradients.",
+        "specialisation_id": 3,
+        "data": {
+            "price": 25,
+            "number_of_hours": 25,
+            "rating": 4.5,
+            "number_of_reviews": 80,
+            "skills_earned": [
+                "Markov Decision Processes",
+                "Q-Learning",
+                "Policy Gradient Methods",
+                "OpenAI Gym"
+            ],
+            "about": "Learn to train agents to make sequential decisions using reinforcement learning environments.",
+            "outcome": [
+                "Formulate MDPs for simple tasks",
+                "Implement Q-learning from scratch",
+                "Apply policy gradient algorithms"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Emily Zhang",
+                    "university": "University of Oxford",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Li Wei",
+                    "university": "Tsinghua University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Oxford Department of Computer Science"
+            },
+            "number_of_modules": 5,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Great RL intro",
+                    "review": "The Q-learning lab made complex concepts approachable.",
+                    "created_at": "2025-03-10T12:00:00Z",
+                    "author": "Sophia Grant"
+                },
+                {
+                    "message": "Hands-on and fun",
+                    "review": "Training agents in OpenAI Gym was my favorite part.",
+                    "created_at": "2025-03-15T13:30:00Z",
+                    "author": "Liam O’Sullivan"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Convolutional Neural Networks in Practice",
+        "description": "Hands-on training in building, training, and optimizing CNNs for image classification and feature extraction.",
+        "specialisation_id": 4,
+        "data": {
+            "price": 25,
+            "number_of_hours": 35,
+            "rating": 4.8,
+            "number_of_reviews": 150,
+            "skills_earned": [
+                "Convolutional Layer Design",
+                "Pooling Strategies",
+                "Transfer Learning",
+                "Model Optimization"
+            ],
+            "about": "Build, train, and deploy CNNs using PyTorch and TensorFlow to solve real-world vision tasks.",
+            "outcome": [
+                "Design custom CNN architectures",
+                "Apply data augmentation techniques",
+                "Leverage pre-trained networks",
+                "Optimize models for inference"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Ankit Patel",
+                    "university": "Indian Institute of Technology Bombay",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Laura Müller",
+                    "university": "Technical University of Munich",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Rodriguez",
+                    "university": "University of California, San Diego",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "IIT Bombay Department of Computer Science"
+            },
+            "number_of_modules": 8,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Excellent CNN fundamentals",
+                    "review": "The practical labs on transfer learning were invaluable.",
+                    "created_at": "2025-04-05T10:15:00Z",
+                    "author": "Rhea Sharma"
+                },
+                {
+                    "message": "Great hands-on approach",
+                    "review": "I implemented a classifier for medical images by the end of week two.",
+                    "created_at": "2025-04-12T14:40:00Z",
+                    "author": "Arjun Mehta"
+                },
+                {
+                    "message": "Clear explanations",
+                    "review": "Pooling and stride concepts were explained perfectly.",
+                    "created_at": "2025-04-18T09:30:00Z",
+                    "author": "Nina Desai"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sequence Modeling with RNNs and LSTMs",
+        "description": "Learn to model sequential data using RNNs, LSTMs, and GRUs for tasks like language modeling and time-series forecasting.",
+        "specialisation_id": 4,
+        "data": {
+            "price": 30,
+            "number_of_hours": 30,
+            "rating": 4.7,
+            "number_of_reviews": 120,
+            "skills_earned": [
+                "Recurrent Layer Implementation",
+                "Long Short-Term Memory",
+                "Gated Recurrent Units",
+                "Sequence-to-Sequence Models"
+            ],
+            "about": "Implement and train RNNs and LSTMs from scratch, and apply them to NLP and forecasting tasks.",
+            "outcome": [
+                "Build vanilla RNNs and LSTMs",
+                "Handle vanishing/exploding gradients",
+                "Implement seq-to-seq architectures",
+                "Evaluate sequence predictions"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Ankit Patel",
+                    "university": "Indian Institute of Technology Bombay",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Laura Müller",
+                    "university": "Technical University of Munich",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Rodriguez",
+                    "university": "University of California, San Diego",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "IIT Bombay Department of Computer Science"
+            },
+            "number_of_modules": 6,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Great sequence tutorials",
+                    "review": "The LSTM implementation lab clarified many doubts.",
+                    "created_at": "2025-04-08T11:25:00Z",
+                    "author": "Vikram Singh"
+                },
+                {
+                    "message": "Very practical",
+                    "review": "I used RNNs to forecast sales data successfully.",
+                    "created_at": "2025-04-15T13:50:00Z",
+                    "author": "Priya Nair"
+                },
+                {
+                    "message": "Engaging content",
+                    "review": "GRU comparison lab was highly informative.",
+                    "created_at": "2025-04-20T10:10:00Z",
+                    "author": "Sai Kumar"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Transformer Architectures and Attention Mechanisms",
+        "description": "Explore the transformer model and self-attention, and learn to build and fine-tune transformer-based networks.",
+        "specialisation_id": 4,
+        "data": {
+            "price": 50,
+            "number_of_hours": 40,
+            "rating": 4.9,
+            "number_of_reviews": 130,
+            "skills_earned": [
+                "Self-Attention",
+                "Positional Encoding",
+                "Multi-Head Attention",
+                "Transformer Fine-Tuning"
+            ],
+            "about": "Dive into the transformer architecture, understand attention mechanisms, and fine-tune pre-trained transformer models.",
+            "outcome": [
+                "Implement transformer encoder/decoder",
+                "Visualize attention maps",
+                "Fine-tune BERT and GPT models",
+                "Deploy transformer services"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Ankit Patel",
+                    "university": "Indian Institute of Technology Bombay",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Laura Müller",
+                    "university": "Technical University of Munich",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Rodriguez",
+                    "university": "University of California, San Diego",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "IIT Bombay Department of Computer Science"
+            },
+            "number_of_modules": 7,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Transformers demystified",
+                    "review": "Attention lab was enlightening—I can now build custom transformer blocks.",
+                    "created_at": "2025-04-10T12:00:00Z",
+                    "author": "Anisha Patel"
+                },
+                {
+                    "message": "Cutting-edge content",
+                    "review": "Fine-tuning BERT on custom data was seamless after this course.",
+                    "created_at": "2025-04-18T14:20:00Z",
+                    "author": "David Liu"
+                },
+                {
+                    "message": "Highly recommended",
+                    "review": "The multi-head attention visualization tool was excellent.",
+                    "created_at": "2025-04-22T09:45:00Z",
+                    "author": "Fatima Khan"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Variational Autoencoders and Generative Models",
+        "description": "Learn to build and train VAEs and other generative models for data synthesis and anomaly detection.",
+        "specialisation_id": 4,
+        "data": {
+            "price": 30,
+            "number_of_hours": 25,
+            "rating": 4.7,
+            "number_of_reviews": 110,
+            "skills_earned": [
+                "Latent Space Modeling",
+                "KL Divergence",
+                "Sampling Techniques",
+                "Anomaly Detection"
+            ],
+            "about": "Implement VAEs from scratch, visualize latent spaces, and apply generative models to create new data samples.",
+            "outcome": [
+                "Derive and implement VAE loss",
+                "Visualize and sample latent space",
+                "Apply VAEs for anomaly detection"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Ankit Patel",
+                    "university": "Indian Institute of Technology Bombay",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Laura Müller",
+                    "university": "Technical University of Munich",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Rodriguez",
+                    "university": "University of California, San Diego",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "IIT Bombay Department of Computer Science"
+            },
+            "number_of_modules": 5,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Excellent generative insights",
+                    "review": "Building a VAE from scratch clarified the theory immensely.",
+                    "created_at": "2025-04-12T11:15:00Z",
+                    "author": "Rohan Deshmukh"
+                },
+                {
+                    "message": "Practical and theoretical balance",
+                    "review": "I used VAEs for anomaly detection in network logs successfully.",
+                    "created_at": "2025-04-20T15:30:00Z",
+                    "author": "Sneha Rao"
+                },
+                {
+                    "message": "Clear latent visualizations",
+                    "review": "The manifold visualizer lab was a highlight.",
+                    "created_at": "2025-04-25T10:05:00Z",
+                    "author": "Leila Ahmed"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Generative Adversarial Networks (GANs) Mastery",
+        "description": "Master GAN architectures, training stability techniques, and apply GANs to image synthesis and transformation.",
+        "specialisation_id": 4,
+        "data": {
+            "price": 30,
+            "number_of_hours": 30,
+            "rating": 4.9,
+            "number_of_reviews": 140,
+            "skills_earned": [
+                "Generator & Discriminator Design",
+                "Wasserstein GAN",
+                "Training Stabilization",
+                "Image-to-Image Translation"
+            ],
+            "about": "Implement GANs from the ground up, explore advanced variants, and apply them to creative and analytical use cases.",
+            "outcome": [
+                "Train stable GAN models",
+                "Use WGAN and WGAN-GP",
+                "Apply GANs for image synthesis"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Ankit Patel",
+                    "university": "Indian Institute of Technology Bombay",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Laura Müller",
+                    "university": "Technical University of Munich",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Rodriguez",
+                    "university": "University of California, San Diego",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "IIT Bombay Department of Computer Science"
+            },
+            "number_of_modules": 7,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "GANs demystified",
+                    "review": "The stabilization tricks lab saved me hours of debugging.",
+                    "created_at": "2025-04-15T13:00:00Z",
+                    "author": "Meera Singh"
+                },
+                {
+                    "message": "Creative and technical",
+                    "review": "I generated high-quality images from noise within days.",
+                    "created_at": "2025-04-22T16:20:00Z",
+                    "author": "Arun Roy"
+                },
+                {
+                    "message": "Excellent implementation",
+                    "review": "The image-to-image translation module was fantastic.",
+                    "created_at": "2025-04-28T09:50:00Z",
+                    "author": "Leah Kim"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Word Embeddings and Representations",
+        "description": "Learn to create and utilize word and sentence embeddings for downstream NLP tasks.",
+        "specialisation_id": 5,
+        "data": {
+            "price": 30,
+            "number_of_hours": 30,
+            "rating": 4.7,
+            "number_of_reviews": 95,
+            "skills_earned": [
+                "Word2Vec",
+                "GloVe",
+                "FastText",
+                "Sentence Embeddings"
+            ],
+            "about": "Cover training and using static and contextual embeddings to represent text in vector form.",
+            "outcome": [
+                "Train custom Word2Vec and GloVe models",
+                "Apply FastText for subword embeddings",
+                "Generate sentence embeddings with SBERT"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Sophie Lee",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Alvarez",
+                    "university": "University of Cambridge",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Toronto NLP Lab"
+            },
+            "number_of_modules": 6,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Embeddings demystified",
+                    "review": "The hands-on labs made vector representations intuitive.",
+                    "created_at": "2025-02-10T08:30:00Z",
+                    "author": "Emily Carter"
+                },
+                {
+                    "message": "Practical and clear",
+                    "review": "Implementing FastText improved our rare‐word handling instantly.",
+                    "created_at": "2025-02-15T11:20:00Z",
+                    "author": "Ravi Kumar"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sequence-to-Sequence Models and Attention",
+        "description": "Master encoder-decoder architectures and attention mechanisms for translation and summarization.",
+        "specialisation_id": 5,
+        "data": {
+            "price": 30,
+            "number_of_hours": 35,
+            "rating": 4.8,
+            "number_of_reviews": 110,
+            "skills_earned": [
+                "Seq2Seq Architectures",
+                "Bahdanau & Luong Attention",
+                "Beam Search",
+                "Teacher Forcing"
+            ],
+            "about": "Build and train seq2seq models with attention to perform machine translation and text summarization.",
+            "outcome": [
+                "Implement encoder-decoder RNNs",
+                "Apply additive and multiplicative attention",
+                "Use beam search for decoding"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Sophie Lee",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Ming Zhao",
+                    "university": "Peking University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Toronto NLP Lab"
+            },
+            "number_of_modules": 7,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Attention explained clearly",
+                    "review": "Visualizing attention weights was a game-changer.",
+                    "created_at": "2025-03-01T09:45:00Z",
+                    "author": "Laura Chen"
+                },
+                {
+                    "message": "Great translation lab",
+                    "review": "I built an English-French translator by following the exercises.",
+                    "created_at": "2025-03-05T14:10:00Z",
+                    "author": "Marco Silva"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Transformer Models and BERT Fine-Tuning",
+        "description": "Dive into the transformer architecture and fine-tune BERT for classification and QA tasks.",
+        "specialisation_id": 5,
+        "data": {
+            "price": 40,
+            "number_of_hours": 40,
+            "rating": 4.9,
+            "number_of_reviews": 125,
+            "skills_earned": [
+                "Self-Attention",
+                "Positional Encoding",
+                "BERT Preprocessing",
+                "Fine-Tuning Pipelines"
+            ],
+            "about": "Understand transformer internals and apply Hugging Face tools to fine-tune pre-trained models.",
+            "outcome": [
+                "Implement transformer encoder blocks",
+                "Fine-tune BERT on custom datasets",
+                "Deploy transformers via REST API"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Carlos Alvarez",
+                    "university": "University of Cambridge",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Ming Zhao",
+                    "university": "Peking University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Toronto NLP Lab"
+            },
+            "number_of_modules": 8,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Transformers made approachable",
+                    "review": "Fine-tuning BERT on our legal texts was straightforward.",
+                    "created_at": "2025-03-15T10:30:00Z",
+                    "author": "Priya Deshpande"
+                },
+                {
+                    "message": "In-depth and practical",
+                    "review": "The REST API deployment example saved me days of work.",
+                    "created_at": "2025-03-20T16:45:00Z",
+                    "author": "Liam O’Brien"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Building Chatbots and Dialogue Systems",
+        "description": "Learn to design, implement, and evaluate chatbots using retrieval-based and generative approaches.",
+        "specialisation_id": 5,
+        "data": {
+            "price": 30,
+            "number_of_hours": 25,
+            "rating": 4.6,
+            "number_of_reviews": 90,
+            "skills_earned": [
+                "Intent Recognition",
+                "Slot Filling",
+                "Seq2Seq Chatbots",
+                "Rasa & Dialogflow"
+            ],
+            "about": "Create conversational agents with rule-based flows and neural dialogue models.",
+            "outcome": [
+                "Build intent-classification pipelines",
+                "Implement slot-filling systems",
+                "Train seq2seq chatbots"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Sophie Lee",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Alvarez",
+                    "university": "University of Cambridge",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Toronto NLP Lab"
+            },
+            "number_of_modules": 5,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Chatbot fundamentals nailed",
+                    "review": "The Rasa module was especially clear and actionable.",
+                    "created_at": "2025-04-02T13:20:00Z",
+                    "author": "Aisha Khan"
+                },
+                {
+                    "message": "Fun and informative",
+                    "review": "Building a seq2seq bot was the highlight for me.",
+                    "created_at": "2025-04-05T09:55:00Z",
+                    "author": "Jamal Edwards"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Deploying NLP Models to Production",
+        "description": "Operationalize NLP workflows: containerization, monitoring, and scalable serving of language models.",
+        "specialisation_id": 5,
+        "data": {
+            "price": 40,
+            "number_of_hours": 20,
+            "rating": 4.7,
+            "number_of_reviews": 80,
+            "skills_earned": [
+                "Docker & Kubernetes",
+                "Model Serving",
+                "Logging & Monitoring",
+                "API Design"
+            ],
+            "about": "Learn best practices to containerize, serve, and monitor NLP models in a production environment.",
+            "outcome": [
+                "Containerize NLP services",
+                "Deploy with Kubernetes",
+                "Implement monitoring dashboards"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Ming Zhao",
+                    "university": "Peking University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Carlos Alvarez",
+                    "university": "University of Cambridge",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Toronto NLP Lab"
+            },
+            "number_of_modules": 4,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Smooth production rollout",
+                    "review": "The Docker + Kubernetes walk-through was spot-on.",
+                    "created_at": "2025-04-10T11:10:00Z",
+                    "author": "Michael Tan"
+                },
+                {
+                    "message": "Monitoring best practices",
+                    "review": "Setting up Prometheus alerts for model drift was very helpful.",
+                    "created_at": "2025-04-12T15:25:00Z",
+                    "author": "Zara Ahmed"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Fundamentals of Image Processing",
+        "description": "Learn the core techniques of image processing, including filtering, transformations, and feature extraction.",
+        "specialisation_id": 6,
+        "data": {
+            "price": 40,
+            "number_of_hours": 25,
+            "rating": 4.6,
+            "number_of_reviews": 90,
+            "skills_earned": [
+                "Image Filtering",
+                "Histogram Equalization",
+                "Edge Detection",
+                "Feature Extraction"
+            ],
+            "about": "Understand how to manipulate and enhance images programmatically using OpenCV and PIL.",
+            "outcome": [
+                "Apply spatial and frequency domain filters",
+                "Perform geometric transformations",
+                "Extract keypoints and descriptors",
+                "Preprocess images for ML pipelines"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Yuki Tanaka",
+                    "university": "University of Tokyo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Miguel Santos",
+                    "university": "University of São Paulo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Anna Liu",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Tokyo Vision Institute"
+            },
+            "number_of_modules": 6,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Great introduction",
+                    "review": "The filtering labs helped me clean noisy images in my project.",
+                    "created_at": "2025-02-15T09:30:00Z",
+                    "author": "Kenji Watanabe"
+                },
+                {
+                    "message": "Hands-on and clear",
+                    "review": "Edge detection exercises were explained perfectly.",
+                    "created_at": "2025-02-20T11:45:00Z",
+                    "author": "Mariana Silva"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Object Detection with YOLO and Faster R-CNN",
+        "description": "Implement and compare state-of-the-art object detectors for real-time and high-accuracy use cases.",
+        "specialisation_id": 6,
+        "data": {
+            "price": 40,
+            "number_of_hours": 30,
+            "rating": 4.8,
+            "number_of_reviews": 110,
+            "skills_earned": [
+                "YOLO Architecture",
+                "Faster R-CNN",
+                "Anchor Boxes",
+                "Non-Max Suppression"
+            ],
+            "about": "Train and deploy YOLO and Faster R-CNN models on custom datasets using PyTorch.",
+            "outcome": [
+                "Prepare data for detection tasks",
+                "Train YOLOv5 models",
+                "Implement Faster R-CNN pipelines",
+                "Evaluate detector performance"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Yuki Tanaka",
+                    "university": "University of Tokyo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Anna Liu",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Tokyo Vision Institute"
+            },
+            "number_of_modules": 7,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Real-time detection success",
+                    "review": "I deployed a YOLOv5 detector to our surveillance system seamlessly.",
+                    "created_at": "2025-03-01T10:20:00Z",
+                    "author": "Sara Yamamoto"
+                },
+                {
+                    "message": "High accuracy",
+                    "review": "Faster R-CNN lab improved my precision by 12%.",
+                    "created_at": "2025-03-05T14:10:00Z",
+                    "author": "Lucas Pereira"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Semantic and Instance Segmentation",
+        "description": "Master segmentation techniques to delineate objects at pixel-level for advanced vision tasks.",
+        "specialisation_id": 6,
+        "data": {
+            "price": 10,
+            "number_of_hours": 35,
+            "rating": 4.7,
+            "number_of_reviews": 95,
+            "skills_earned": [
+                "U-Net Architecture",
+                "Mask R-CNN",
+                "CRF Post-processing",
+                "Data Augmentation"
+            ],
+            "about": "Implement U-Net and Mask R-CNN for semantic and instance segmentation with real datasets.",
+            "outcome": [
+                "Build and train U-Net models",
+                "Apply Mask R-CNN for instance tasks",
+                "Refine masks with CRFs",
+                "Perform augmentation for segmentation"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Miguel Santos",
+                    "university": "University of São Paulo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Anna Liu",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Tokyo Vision Institute"
+            },
+            "number_of_modules": 8,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Pixel-perfect results",
+                    "review": "My segmentation accuracy jumped from 65% to 89%.",
+                    "created_at": "2025-03-10T12:00:00Z",
+                    "author": "Elena Garcia"
+                },
+                {
+                    "message": "Detailed explanation",
+                    "review": "CRF post-processing module was a game-changer.",
+                    "created_at": "2025-03-15T16:30:00Z",
+                    "author": "Omar Aziz"
+                }
+            ]
+        }
+    },
+    {
+        "name": "3D Computer Vision and Depth Estimation",
+        "description": "Explore techniques for reconstructing and understanding 3D scenes from 2D images.",
+        "specialisation_id": 6,
+        "data": {
+            "price": 10,
+            "number_of_hours": 40,
+            "rating": 4.6,
+            "number_of_reviews": 85,
+            "skills_earned": [
+                "Stereo Matching",
+                "Structure from Motion",
+                "Depth Networks",
+                "Point Cloud Processing"
+            ],
+            "about": "Implement depth estimation models and 3D reconstruction pipelines using multi-view imagery.",
+            "outcome": [
+                "Perform stereo depth estimation",
+                "Build SfM pipelines",
+                "Train monocular depth networks",
+                "Visualize point clouds"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Yuki Tanaka",
+                    "university": "University of Tokyo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Miguel Santos",
+                    "university": "University of São Paulo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Tokyo Vision Institute"
+            },
+            "number_of_modules": 9,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Immersive 3D labs",
+                    "review": "SfM pipeline implementation was thorough and well-explained.",
+                    "created_at": "2025-04-01T09:50:00Z",
+                    "author": "Lara Kim"
+                },
+                {
+                    "message": "Depth perfected",
+                    "review": "Monocular depth estimation module exceeded expectations.",
+                    "created_at": "2025-04-05T11:15:00Z",
+                    "author": "Rohit Gupta"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Vision Transformers and Attention in CV",
+        "description": "Apply transformer architectures and attention mechanisms to computer vision tasks.",
+        "specialisation_id": 6,
+        "data": {
+            "price": 10,
+            "number_of_hours": 45,
+            "rating": 4.9,
+            "number_of_reviews": 120,
+            "skills_earned": [
+                "Vision Transformer (ViT)",
+                "Swin Transformer",
+                "Attention Visualization",
+                "Hybrid CNN-Transformer Models"
+            ],
+            "about": "Understand and implement vision transformer models, and fine-tune them on custom image datasets.",
+            "outcome": [
+                "Build ViT architectures",
+                "Fine-tune Swin Transformer",
+                "Visualize attention maps",
+                "Combine CNN and transformer features"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Anna Liu",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Miguel Santos",
+                    "university": "University of São Paulo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Tokyo Vision Institute"
+            },
+            "number_of_modules": 10,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Transformers for vision",
+                    "review": "ViT implementation was clear and concise.",
+                    "created_at": "2025-04-10T14:20:00Z",
+                    "author": "Nina Farooq"
+                },
+                {
+                    "message": "Cutting-edge content",
+                    "review": "Attention visualization tools were incredibly insightful.",
+                    "created_at": "2025-04-15T16:55:00Z",
+                    "author": "David Park"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Advanced Spark Analytics",
+        "description": "Deep dive into Spark SQL, DataFrame APIs, and Structured Streaming to process and analyze large-scale data.",
+        "specialisation_id": 7,
+        "data": {
+            "price": 10,
+            "number_of_hours": 40,
+            "rating": 4.7,
+            "number_of_reviews": 180,
+            "skills_earned": [
+                "Spark SQL & DataFrames",
+                "Structured Streaming",
+                "Job Optimization",
+                "Spark on Kubernetes"
+            ],
+            "about": "Learn to build, tune, and deploy high-performance Spark applications for batch and streaming workloads.",
+            "outcome": [
+                "Author complex Spark SQL queries",
+                "Implement Structured Streaming pipelines",
+                "Optimize Spark jobs for performance",
+                "Deploy Spark on Kubernetes clusters"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Elena Petrova",
+                    "university": "Moscow State University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Samuel Brown",
+                    "university": "University of Melbourne",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Daniel Wilson",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "MSU Data Lab"
+            },
+            "number_of_modules": 9,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Spark mastery unlocked",
+                    "review": "The performance tuning section cut our job runtimes by 50%.",
+                    "created_at": "2025-03-10T14:25:00Z",
+                    "author": "Ravi Patel"
+                },
+                {
+                    "message": "Streaming made simple",
+                    "review": "Structured Streaming examples helped me launch real-time alerts quickly.",
+                    "created_at": "2025-03-15T09:40:00Z",
+                    "author": "Sophia Lee"
+                },
+                {
+                    "message": "Kubernetes integration rock solid",
+                    "review": "Deploying Spark on k8s was straightforward after following the labs.",
+                    "created_at": "2025-03-20T11:55:00Z",
+                    "author": "Miguel Torres"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Building Real-Time Streaming Pipelines with Kafka",
+        "description": "Architect, implement, and monitor real-time data pipelines using Apache Kafka and related ecosystem tools.",
+        "specialisation_id": 7,
+        "data": {
+            "price": 10,
+            "number_of_hours": 35,
+            "rating": 4.6,
+            "number_of_reviews": 140,
+            "skills_earned": [
+                "Kafka Producers & Consumers",
+                "Kafka Streams API",
+                "Schema Registry",
+                "Monitoring with Prometheus"
+            ],
+            "about": "Design end-to-end streaming architectures, implement Kafka-based pipelines, and ensure reliability in production.",
+            "outcome": [
+                "Set up Kafka clusters",
+                "Develop stream processing applications",
+                "Manage schemas with Confluent Registry",
+                "Monitor pipeline health"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Elena Petrova",
+                    "university": "Moscow State University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Samuel Brown",
+                    "university": "University of Melbourne",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Daniel Wilson",
+                    "university": "Massachusetts Institute of Technology",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "MSU Data Lab"
+            },
+            "number_of_modules": 8,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Robust streaming foundations",
+                    "review": "Kafka Streams labs helped me build a fault-tolerant analytics pipeline.",
+                    "created_at": "2025-04-02T10:05:00Z",
+                    "author": "Liam O’Connor"
+                },
+                {
+                    "message": "Schema management clarity",
+                    "review": "Understanding schema evolution saved us from breaking changes in production.",
+                    "created_at": "2025-04-07T13:15:00Z",
+                    "author": "Priya Desai"
+                },
+                {
+                    "message": "Great monitoring guidance",
+                    "review": "The Prometheus & Grafana section was exactly what I needed to track lag and throughput.",
+                    "created_at": "2025-04-12T16:30:00Z",
+                    "author": "Anya Petrova"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Dash App Development for Interactive Data Visualization",
+        "description": "Learn to build and deploy interactive dashboards using Plotly Dash to communicate insights effectively.",
+        "specialisation_id": 8,
+        "data": {
+            "price": 30,
+            "number_of_hours": 25,
+            "rating": 4.7,
+            "number_of_reviews": 80,
+            "skills_earned": [
+                "Dash Layouts & Callbacks",
+                "Live Data Updates",
+                "Custom Components",
+                "Deployment to Heroku"
+            ],
+            "about": "Step through designing and coding full-featured Dash applications, then deploy them to share with stakeholders.",
+            "outcome": [
+                "Create multi-page Dash apps",
+                "Implement reactive callbacks",
+                "Integrate live APIs",
+                "Deploy to cloud platforms"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Priya Nair",
+                    "university": "University of Edinburgh",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. David Kim",
+                    "university": "Seoul National University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Edinburgh Data Lab"
+            },
+            "number_of_modules": 6,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Fantastic hands-on labs",
+                    "review": "Building my first Dash app was surprisingly straightforward.",
+                    "created_at": "2025-05-01T10:00:00Z",
+                    "author": "Maya Singh"
+                },
+                {
+                    "message": "Deployment made easy",
+                    "review": "The Heroku deployment walkthrough saved me hours of debugging.",
+                    "created_at": "2025-05-03T14:20:00Z",
+                    "author": "Arjun Rao"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Advanced Plotly & Seaborn Techniques",
+        "description": "Master complex chart types and customization using Plotly and Seaborn for publication-quality visualizations.",
+        "specialisation_id": 8,
+        "data": {
+            "price": 30,
+            "number_of_hours": 20,
+            "rating": 4.8,
+            "number_of_reviews":  90,
+            "skills_earned": [
+                "Interactive Plotly Charts",
+                "Seaborn Theming",
+                "3D Visualizations",
+                "Animation & Widgets"
+            ],
+            "about": "Dive into advanced plotting features, theming, and interactivity to elevate your data storytelling.",
+            "outcome": [
+                "Create animated and 3D plots",
+                "Customize themes and styles",
+                "Embed visualizations in web apps"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Lucas Martinez",
+                    "university": "Stanford University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Priya Nair",
+                    "university": "University of Edinburgh",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "Edinburgh Data Lab"
+            },
+            "number_of_modules": 5,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Stunning visuals",
+                    "review": "The animation module took my dashboards to the next level.",
+                    "created_at": "2025-04-28T09:30:00Z",
+                    "author": "Sophia Patel"
+                },
+                {
+                    "message": "Deep customization",
+                    "review": "Seaborn theming tips helped me match corporate branding perfectly.",
+                    "created_at": "2025-05-02T11:50:00Z",
+                    "author": "Liam O’Connor"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Docker & Containerization for ML",
+        "description": "Learn to containerize machine learning models and pipelines for consistent, reproducible deployments.",
+        "specialisation_id": 9,
+        "data": {
+            "price": 30,
+            "number_of_hours": 20,
+            "rating": 4.6,
+            "number_of_reviews": 70,
+            "skills_earned": [
+                "Dockerfile Authoring",
+                "Image Optimization",
+                "Multi-Stage Builds",
+                "Registry Management"
+            ],
+            "about": "Step through packaging your models and inference code into Docker containers ready for production.",
+            "outcome": [
+                "Write efficient Dockerfiles",
+                "Build and push images",
+                "Implement multi-stage builds",
+                "Manage private registries"
+            ],
+            "instructors": [
+                {
+                    "name": "Prof. Sara Johnson",
+                    "university": "University of Washington",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Dr. Marco Rossi",
+                    "university": "Politecnico di Milano",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "UW eScience Institute"
+            },
+            "number_of_modules": 4,
+            "level": "Beginner",
+            "reviews": [
+                {
+                    "message": "Clear and concise",
+                    "review": "I containerized my first model with zero issues.",
+                    "created_at": "2025-04-20T13:00:00Z",
+                    "author": "Nathan Brooks"
+                },
+                {
+                    "message": "Great foundations",
+                    "review": "Multi-stage builds really cut down my image sizes.",
+                    "created_at": "2025-04-25T15:45:00Z",
+                    "author": "Leila Ahmed"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Kubernetes Deployment of Machine Learning Models",
+        "description": "Discover how to deploy and manage ML workloads on Kubernetes clusters using best practices.",
+        "specialisation_id": 9,
+        "data": {
+            "price": 30,
+            "number_of_hours": 30,
+            "rating": 4.8,
+            "number_of_reviews": 85,
+            "skills_earned": [
+                "Helm Chart Creation",
+                "Kustomize Overlays",
+                "Autoscaling Policies",
+                "Service Mesh Integration"
+            ],
+            "about": "Set up Kubernetes environments, helm charts, and CI/CD pipelines to serve and scale ML models.",
+            "outcome": [
+                "Define Kubernetes manifests",
+                "Package with Helm",
+                "Configure autoscaling",
+                "Integrate Istio for traffic control"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Akira Yamamoto",
+                    "university": "University of Tokyo",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Sara Johnson",
+                    "university": "University of Washington",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "UW eScience Institute"
+            },
+            "number_of_modules": 7,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Production-ready skills",
+                    "review": "Helm chart module helped me standardize our deployments.",
+                    "created_at": "2025-04-22T10:20:00Z",
+                    "author": "Viktor Svensson"
+                },
+                {
+                    "message": "Excellent best practices",
+                    "review": "Autoscaling labs ensured our service stayed responsive under load.",
+                    "created_at": "2025-04-27T14:35:00Z",
+                    "author": "Leila Ahmed"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Bias Detection & Mitigation Strategies",
+        "description": "Identify and mitigate bias in AI systems using quantitative and qualitative techniques.",
+        "specialisation_id": 10,
+        "data": {
+            "price": 30,
+            "number_of_hours": 20,
+            "rating": 4.5,
+            "number_of_reviews": 60,
+            "skills_earned": [
+                "Bias Metrics Calculation",
+                "Fairness-Aware Algorithms",
+                "Data Auditing",
+                "Mitigation Techniques"
+            ],
+            "about": "Learn frameworks and tools to audit datasets and models for bias, then apply mitigation strategies.",
+            "outcome": [
+                "Compute fairness metrics",
+                "Implement bias mitigation algorithms",
+                "Audit datasets for representation gaps"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Anita Rao",
+                    "university": "London School of Economics",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Michael Green",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "LSE Data Policy Centre"
+            },
+            "number_of_modules": 5,
+            "level": "Intermediate",
+            "reviews": [
+                {
+                    "message": "Eye-opening content",
+                    "review": "I spotted biases in our hiring model I never knew existed.",
+                    "created_at": "2025-03-12T09:00:00Z",
+                    "author": "Jae-Min Park"
+                },
+                {
+                    "message": "Practical toolkit",
+                    "review": "The hands-on mitigation labs were immediately useful.",
+                    "created_at": "2025-03-18T11:15:00Z",
+                    "author": "Zara Laurent"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Privacy & Security in AI Systems",
+        "description": "Explore techniques for ensuring data privacy and security in AI applications, from differential privacy to secure enclaves.",
+        "specialisation_id": 10,
+        "data": {
+            "price": 30,
+            "number_of_hours": 30,
+            "rating": 4.6,
+            "number_of_reviews": 70,
+            "skills_earned": [
+                "Differential Privacy",
+                "Homomorphic Encryption",
+                "Secure Multi-Party Computation",
+                "Threat Modeling"
+            ],
+            "about": "Understand and implement privacy-preserving methods and secure deployment practices for AI systems.",
+            "outcome": [
+                "Apply differential privacy methods",
+                "Use homomorphic encryption libraries",
+                "Design threat models for AI",
+                "Implement secure enclaves"
+            ],
+            "instructors": [
+                {
+                    "name": "Dr. Fatima Al-Mansouri",
+                    "university": "New York University",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                },
+                {
+                    "name": "Prof. Michael Green",
+                    "university": "University of Toronto",
+                    "profile_pic": "https://thispersondoesnotexist.com/"
+                }
+            ],
+            "course_creator": {
+                "university": "LSE Data Policy Centre"
+            },
+            "number_of_modules": 6,
+            "level": "Advanced",
+            "reviews": [
+                {
+                    "message": "Highly relevant",
+                    "review": "Differential privacy module was exactly what our legal team needed.",
+                    "created_at": "2025-03-20T13:30:00Z",
+                    "author": "Fatima Khan"
+                },
+                {
+                    "message": "Security-first approach",
+                    "review": "Secure multi-party computation labs were thorough and well-supported.",
+                    "created_at": "2025-03-25T15:00:00Z",
+                    "author": "Michael Tan"
+                }
+            ]
+        }
+    }
+]

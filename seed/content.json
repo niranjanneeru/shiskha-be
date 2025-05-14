@@ -1,0 +1,2468 @@
+[
+    {
+        "course_id": 1,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Introduction to Generative AI in BI",
+            "duration": "12:30",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module1-cheatsheet.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 150,
+            "dislikes": 5
+        },
+        "content_text": "Overview of generative AI applications in business intelligence, key use cases, and the course roadmap."
+    },
+    {
+        "course_id": 1,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Crafting Effective Prompts",
+            "duration": "15:45",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/prompt-engineering-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 120,
+            "dislikes": 3
+        },
+        "content_text": "Hands-on demonstration of prompt design techniques for querying and narrative generation in BI workflows."
+    },
+    {
+        "course_id": 1,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Automating BI Dashboards",
+            "duration": "20:10",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/dashboard-automation-scripts.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 2
+        },
+        "content_text": "Step-by-step guide to building and deploying an AI-powered BI dashboard using Python, Dash, and the Razorpay API."
+    },
+    {
+        "course_id": 1,
+        "content_type": "article",
+        "content_url": "https://example.com/articles/module4-integration.md",
+        "content_data": {
+            "title": "Module 4: Integrating Data Sources",
+            "module_number": 4,
+            "read_time": "10 min",
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/data-source-connectors.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 110,
+            "dislikes": 4
+        },
+        "content_text": "# Module 4: Integrating Data Sources\n\nIn this article you'll learn how to:\n\n- Connect to **databases**, **REST APIs**, and **CSV/JSON** files\n- Normalize and merge disparate data streams\n- Handle authentication, rate-limits, and pagination\n\n```python\nimport pandas as pd\n# load CSV\ndf = pd.read_csv('sales.csv')\n# fetch API\ndf_api = pd.read_json('https://api.example.com/data')\n# merge\ndf_all = pd.concat([df, df_api], ignore_index=True)\n```\n\n> **Tip:** Always sanitize column names before merging to avoid key collisions."
+    },
+    {
+        "course_id": 1,
+        "content_type": "article",
+        "content_url": "https://example.com/articles/module5-templates.md",
+        "content_data": {
+            "title": "Module 5: Building Report Templates",
+            "module_number": 5,
+            "read_time": "12 min",
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/report-templates.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 6
+        },
+        "content_text": "# Module 5: Building Report Templates\n\nYou will:\n\n1. Define a **Jinja2** template for HTML reports\n2. Insert dynamic placeholders for charts and tables\n3. Render to PDF or HTML for distribution\n\n```jinja\n<!DOCTYPE html>\n<html>\n  <head><title>{{ report_title }}</title></head>\n  <body>\n    <h1>{{ report_title }}</h1>\n    <img src=\"{{ chart_url }}\" alt=\"Sales Chart\" />\n    <table>\n      {% for row in data_rows %}\n      <tr><td>{{ row.category }}</td><td>{{ row.value }}</td></tr>\n      {% endfor %}\n    </table>\n  </body>\n</html>\n```\n\n> **Bonus:** Use CSS for theming to match your corporate branding."
+    },
+    {
+        "course_id": 2,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Data Preprocessing and Cleaning",
+            "duration": "10:00",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/preprocessing-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 100,
+            "dislikes": 2
+        },
+        "content_text": "Learn essential techniques to clean, normalize, and prepare your data for mining tasks."
+    },
+    {
+        "course_id": 2,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Clustering Algorithms Deep Dive",
+            "duration": "15:00",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/clustering-algorithms.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 3
+        },
+        "content_text": "Explore k-means, hierarchical clustering, and DBSCAN with practical Python examples."
+    },
+    {
+        "course_id": 2,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Building Classification Models",
+            "duration": "18:30",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/classification-models.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 110,
+            "dislikes": 5
+        },
+        "content_text": "Implement decision trees, random forests, and SVM classifiers, and evaluate them on real datasets."
+    },
+    {
+        "course_id": 3,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Pipeline Orchestration Basics",
+            "duration": "14:00",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/pipeline-orchestration.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 140,
+            "dislikes": 4
+        },
+        "content_text": "Introduction to building and orchestrating data pipelines for automated BI reporting."
+    },
+    {
+        "course_id": 3,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Deploying Model Serving",
+            "duration": "16:30",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/model-serving-endpoints.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 6
+        },
+        "content_text": "Learn how to package and deploy AI models as scalable services for report generation."
+    },
+    {
+        "course_id": 3,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Scheduling Reports and Notifications",
+            "duration": "18:45",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/report-scheduler-scripts.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 125,
+            "dislikes": 3
+        },
+        "content_text": "Automate the scheduling of BI reports and configure notification channels (email, Slack, etc.)."
+    },
+    {
+        "course_id": 4,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Advanced Data Ingestion Techniques",
+            "duration": "14:20",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/ingestion-scripts.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 160,
+            "dislikes": 4
+        },
+        "content_text": "Learn how to connect, batch-load, and stream large BI datasets securely into your analytics platform."
+    },
+    {
+        "course_id": 4,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Visualizing AI-Driven Insights",
+            "duration": "17:05",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/visualization-examples.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 145,
+            "dislikes": 6
+        },
+        "content_text": "Hands-on demo of embedding generative AI narratives into interactive charts and dashboards."
+    },
+    {
+        "course_id": 4,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 3: API Integration for Dynamic Reports",
+            "duration": "19:40",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/api-integration-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 155,
+            "dislikes": 5
+        },
+        "content_text": "Implement REST and GraphQL hooks to fetch live data and feed AI models for up-to-date reporting."
+    },
+    {
+        "course_id": 4,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 4: Customizing and Theming Dashboards",
+            "duration": "16:55",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/dashboard-themes.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 170,
+            "dislikes": 3
+        },
+        "content_text": "Deep dive into CSS and JS theming to match corporate branding and improve UX of AI-powered dashboards."
+    },
+    {
+        "course_id": 4,
+        "content_type": "article",
+        "content_url": "https://example.com/articles/module5-security-best-practices.md",
+        "content_data": {
+            "title": "Module 5: Security & Compliance in AI-BI Pipelines",
+            "module_number": 5,
+            "read_time": "8 min",
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/security-checklist.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 2
+        },
+        "content_text": "# Module 5: Security & Compliance in AI-BI Pipelines\n\nIn this article you will:\n\n- Review data encryption and IAM best practices\n- Implement audit logging for AI model inferences\n- Ensure GDPR/CCPA compliance in automated reporting\n\n```bash\n# Example: enable audit logging in MySQL\nSET GLOBAL audit_log_policy = 'ALL';\n```\n\n> **Note:** Always rotate API keys and monitor access patterns to detect anomalies promptly."
+    },
+    {
+        "course_id": 5,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Time Series Forecasting with ARIMA",
+            "duration": "22:15",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/arima-forecasting-notes.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 145,
+            "dislikes": 4
+        },
+        "content_text": "Learn to fit and validate ARIMA models for forecasting BI metrics like sales and traffic."
+    },
+    {
+        "course_id": 5,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Anomaly Detection Techniques",
+            "duration": "18:40",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/anomaly-detection-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 5
+        },
+        "content_text": "Implement statistical and machine-learning methods to spot outliers and anomalies in your BI data."
+    },
+    {
+        "course_id": 5,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 3: Synthetic Data with GANs",
+            "duration": "25:00",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/gan-synthesis-examples.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 155,
+            "dislikes": 3
+        },
+        "content_text": "Use GANs to generate realistic BI data samples for sandbox testing and anomaly augmentation."
+    },
+    {
+        "course_id": 5,
+        "content_type": "article",
+        "content_url": "https://example.com/articles/module4-forecasting-theory.md",
+        "content_data": {
+            "title": "Module 4: Forecasting Theory and Metrics",
+            "module_number": 4,
+            "read_time": "12 min",
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/forecasting-metrics-cheatsheet.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 120,
+            "dislikes": 2
+        },
+        "content_text": "# Module 4: Forecasting Theory and Metrics\n\nUnderstand error metrics (MAE, MSE, RMSE), seasonality handling, and model selection best practices.\n\n- **MAE** measures average error magnitude\n- **Seasonality** decomposition techniques\n\n```python\nfrom statsmodels.tsa.seasonal import seasonal_decompose\ndecomp = seasonal_decompose(ts, model='additive')\n```"
+    },
+    {
+        "course_id": 5,
+        "content_type": "article",
+        "content_url": "https://example.com/articles/module5-anomaly-guide.md",
+        "content_data": {
+            "title": "Module 5: Anomaly Detection Guide",
+            "module_number": 5,
+            "read_time": "10 min",
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/anomaly-detection-algorithms-summary.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 135,
+            "dislikes": 4
+        },
+        "content_text": "# Module 5: Anomaly Detection Guide\n\nCovers:\n\n1. **Statistical methods**: Z-score, IQR\n2. **ML methods**: Isolation Forest, One-Class SVM\n\n```python\nfrom sklearn.ensemble import IsolationForest\nclf = IsolationForest(contamination=0.01)\nlabels = clf.fit_predict(X)\n```"
+    },
+    {
+        "course_id": 6,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Feature Extraction Essentials",
+            "duration": "13:45",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/feature-extraction-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 4
+        },
+        "content_text": "Learn how to extract meaningful features from images using SIFT, SURF, and ORB detectors."
+    },
+    {
+        "course_id": 6,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Image Augmentation Techniques",
+            "duration": "16:20",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/augmentation-scripts.zip",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 105,
+            "dislikes": 5
+        },
+        "content_text": "Implement various augmentation pipelines to boost model robustness in computer vision tasks."
+    },
+    {
+        "course_id": 7,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Spark RDD Fundamentals",
+            "duration": "18:10",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/rdd-fundamentals.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 115,
+            "dislikes": 6
+        },
+        "content_text": "Understand the core concepts of Spark RDDs, transformations, and actions for big data processing."
+    },
+    {
+        "course_id": 7,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Spark DataFrame API",
+            "duration": "20:00",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/dataframe-api-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 125,
+            "dislikes": 3
+        },
+        "content_text": "Dive into Spark DataFrames, SQL queries, and performance optimizations using Catalyst and Tungsten."
+    },
+    {
+        "course_id": 8,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Creating Interactive Dashboards",
+            "duration": "14:00",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/dashboard-interactive-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 100,
+            "dislikes": 4
+        },
+        "content_text": "Learn to build and configure interactive dashboards using Python and Dash callbacks."
+    },
+    {
+        "course_id": 8,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Publishing Dash Apps to the Web",
+            "duration": "16:30",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/dash-deployment-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 110,
+            "dislikes": 5
+        },
+        "content_text": "Deploy your Dash application to cloud platforms like Heroku or AWS."
+    },
+    {
+        "course_id": 8,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Advanced Plotly Customizations",
+            "duration": "12:45",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/plotly-customization-tips.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 3
+        },
+        "content_text": "Explore Plotly’s theming, custom components, and responsive layouts for rich visualizations."
+    },
+    {
+        "course_id": 9,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Dockerizing Machine Learning Models",
+            "duration": "15:20",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/docker-ml-models.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 120,
+            "dislikes": 5
+        },
+        "content_text": "Package your ML models and dependencies into Docker containers for consistent deployment."
+    },
+    {
+        "course_id": 9,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Kubernetes Deployment of Services",
+            "duration": "17:50",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/k8s-deployment-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 4
+        },
+        "content_text": "Deploy Dockerized ML services to a Kubernetes cluster using Helm and manifests."
+    },
+    {
+        "course_id": 9,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Monitoring & Logging ML Services",
+            "duration": "13:10",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/monitoring-ml-services-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 115,
+            "dislikes": 3
+        },
+        "content_text": "Set up Prometheus and Grafana to monitor performance and logs of your ML endpoints."
+    },
+    {
+        "course_id": 10,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Conducting Ethical AI Audits",
+            "duration": "14:30",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/ethical-ai-audit-checklist.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 2
+        },
+        "content_text": "Learn frameworks and tools to audit AI models for bias, fairness, and transparency."
+    },
+    {
+        "course_id": 10,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Calculating Fairness Metrics",
+            "duration": "16:00",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/fairness-metrics-guide.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 85,
+            "dislikes": 3
+        },
+        "content_text": "Implement and interpret fairness metrics like demographic parity and equal opportunity."
+    },
+    {
+        "course_id": 10,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Privacy-Preserving Techniques in AI",
+            "duration": "18:20",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/privacy-techniques-overview.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 4
+        },
+        "content_text": "Explore differential privacy, homomorphic encryption, and secure multi-party computation."
+    },
+    {
+        "course_id": 11,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Overview and Setup",
+            "duration": "10:00",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module1-notes.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 80,
+            "dislikes": 3
+        },
+        "content_text": "Get started with the course: environment setup, key libraries, and project structure."
+    },
+    {
+        "course_id": 11,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Core Concepts",
+            "duration": "12:30",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module2-core-concepts.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 4
+        },
+        "content_text": "Deep dive into the core theoretical concepts and foundational algorithms."
+    },
+    {
+        "course_id": 11,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Advanced Techniques",
+            "duration": "15:45",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module3-advanced-techniques.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 85,
+            "dislikes": 2
+        },
+        "content_text": "Explore advanced methods, optimizations, and best practices for production-level work."
+    },
+    {
+        "course_id": 12,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Introduction and Tools",
+            "duration": "11:20",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module1-toolkit.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 3
+        },
+        "content_text": "Overview of the toolchain and technologies used throughout the course."
+    },
+    {
+        "course_id": 12,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Workflow Implementation",
+            "duration": "14:10",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module2-workflow.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 100,
+            "dislikes": 5
+        },
+        "content_text": "Step-by-step guide to building the core workflow and integrating components."
+    },
+    {
+        "course_id": 12,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Optimization Strategies",
+            "duration": "13:50",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module3-optimization.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 4
+        },
+        "content_text": "Techniques to optimize performance, memory usage, and scalability."
+    },
+    {
+        "course_id": 13,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Getting Started",
+            "duration": "10:45",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module1-start.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 85,
+            "dislikes": 2
+        },
+        "content_text": "Kick off the course by setting up prerequisites and exploring the initial concepts."
+    },
+    {
+        "course_id": 13,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Feature Engineering",
+            "duration": "12:30",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module2-features.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 3
+        },
+        "content_text": "Learn the art of crafting and selecting features for improved model performance."
+    },
+    {
+        "course_id": 13,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Deployment",
+            "duration": "15:20",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module3-deployment.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 2
+        },
+        "content_text": "Final steps to containerize and deploy your solution in a production environment."
+    },
+    {
+        "course_id": 14,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Introduction and Setup",
+            "duration": "10:00",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/module1-intro.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 80,
+            "dislikes": 3
+        },
+        "content_text": "Get started with the course: environment setup, key libraries, and project structure."
+    },
+    {
+        "course_id": 14,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Topic for Course 14",
+            "duration": "13:05",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course14-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 120,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 14, Module 1."
+    },
+    {
+        "course_id": 14,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Topic for Course 14",
+            "duration": "15:20",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course14-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 14, Module 2."
+    },
+    {
+        "course_id": 14,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Topic for Course 14",
+            "duration": "11:45",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course14-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 140,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 14, Module 3."
+    },
+    {
+        "course_id": 14,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 4: Topic for Course 14",
+            "duration": "18:10",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course14-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 110,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 14, Module 4."
+    },
+    {
+        "course_id": 15,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 1: Topic for Course 15",
+            "duration": "12:30",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course15-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 15, Module 1."
+    },
+    {
+        "course_id": 15,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 2: Topic for Course 15",
+            "duration": "14:00",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course15-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 80,
+            "dislikes": 6
+        },
+        "content_text": "Description for Course 15, Module 2."
+    },
+    {
+        "course_id": 15,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 3: Topic for Course 15",
+            "duration": "16:45",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course15-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 150,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 15, Module 3."
+    },
+    {
+        "course_id": 16,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 1: Topic for Course 16",
+            "duration": "10:15",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course16-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 75,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 16, Module 1."
+    },
+    {
+        "course_id": 16,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 2: Topic for Course 16",
+            "duration": "19:50",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course16-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 160,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 16, Module 2."
+    },
+    {
+        "course_id": 16,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 3: Topic for Course 16",
+            "duration": "22:30",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course16-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 145,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 16, Module 3."
+    },
+    {
+        "course_id": 16,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 4: Topic for Course 16",
+            "duration": "17:05",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course16-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 16, Module 4."
+    },
+    {
+        "course_id": 16,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 5: Topic for Course 16",
+            "duration": "21:10",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course16-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 16, Module 5."
+    },
+    {
+        "course_id": 17,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 1: Topic for Course 17",
+            "duration": "20:00",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course17-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 105,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 17, Module 1."
+    },
+    {
+        "course_id": 17,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 2: Topic for Course 17",
+            "duration": "09:55",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course17-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 85,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 17, Module 2."
+    },
+    {
+        "course_id": 18,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Topic for Course 18",
+            "duration": "23:25",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course18-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 165,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 18, Module 1."
+    },
+    {
+        "course_id": 18,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 2: Topic for Course 18",
+            "duration": "19:54",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course18-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 77,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 18, Module 2."
+    },
+    {
+        "course_id": 18,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 3: Topic for Course 18",
+            "duration": "24:33",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course18-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 70,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 18, Module 3."
+    },
+    {
+        "course_id": 18,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 4: Topic for Course 18",
+            "duration": "12:01",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course18-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 95,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 18, Module 4."
+    },
+    {
+        "course_id": 18,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 5: Topic for Course 18",
+            "duration": "17:09",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course18-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 108,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 18, Module 5."
+    },
+    {
+        "course_id": 19,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 1: Topic for Course 19",
+            "duration": "17:16",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course19-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 90,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 19, Module 1."
+    },
+    {
+        "course_id": 19,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Topic for Course 19",
+            "duration": "17:56",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course19-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 132,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 19, Module 2."
+    },
+    {
+        "course_id": 19,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 3: Topic for Course 19",
+            "duration": "16:39",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course19-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 188,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 19, Module 3."
+    },
+    {
+        "course_id": 19,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 4: Topic for Course 19",
+            "duration": "24:41",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course19-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 199,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 19, Module 4."
+    },
+    {
+        "course_id": 19,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 5: Topic for Course 19",
+            "duration": "25:45",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course19-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 60,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 19, Module 5."
+    },
+    {
+        "course_id": 20,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Topic for Course 20",
+            "duration": "10:27",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course20-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 137,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 20, Module 1."
+    },
+    {
+        "course_id": 20,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 2: Topic for Course 20",
+            "duration": "21:56",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course20-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 63,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 20, Module 2."
+    },
+    {
+        "course_id": 20,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Topic for Course 20",
+            "duration": "11:15",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course20-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 76,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 20, Module 3."
+    },
+    {
+        "course_id": 20,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 4: Topic for Course 20",
+            "duration": "16:00",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course20-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 71,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 20, Module 4."
+    },
+    {
+        "course_id": 20,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 5: Topic for Course 20",
+            "duration": "24:49",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course20-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 112,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 20, Module 5."
+    },
+    {
+        "course_id": 20,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 6: Topic for Course 20",
+            "duration": "18:11",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course20-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 140,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 20, Module 6."
+    },
+    {
+        "course_id": 21,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 1: Topic for Course 21",
+            "duration": "15:28",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course21-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 182,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 21, Module 1."
+    },
+    {
+        "course_id": 21,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 2: Topic for Course 21",
+            "duration": "24:24",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course21-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 110,
+            "dislikes": 6
+        },
+        "content_text": "Description for Course 21, Module 2."
+    },
+    {
+        "course_id": 21,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Topic for Course 21",
+            "duration": "20:26",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course21-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 113,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 21, Module 3."
+    },
+    {
+        "course_id": 21,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 4: Topic for Course 21",
+            "duration": "20:30",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course21-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 111,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 21, Module 4."
+    },
+    {
+        "course_id": 21,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 5: Topic for Course 21",
+            "duration": "10:47",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course21-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 64,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 21, Module 5."
+    },
+    {
+        "course_id": 21,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 6: Topic for Course 21",
+            "duration": "25:39",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course21-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 194,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 21, Module 6."
+    },
+    {
+        "course_id": 22,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 1: Topic for Course 22",
+            "duration": "24:08",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course22-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 173,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 22, Module 1."
+    },
+    {
+        "course_id": 22,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 2: Topic for Course 22",
+            "duration": "10:06",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course22-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 197,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 22, Module 2."
+    },
+    {
+        "course_id": 22,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Topic for Course 22",
+            "duration": "24:10",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course22-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 71,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 22, Module 3."
+    },
+    {
+        "course_id": 23,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 1: Topic for Course 23",
+            "duration": "17:59",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course23-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 143,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 23, Module 1."
+    },
+    {
+        "course_id": 23,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 2: Topic for Course 23",
+            "duration": "22:59",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course23-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 54,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 23, Module 2."
+    },
+    {
+        "course_id": 23,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Topic for Course 23",
+            "duration": "10:05",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course23-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 143,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 23, Module 3."
+    },
+    {
+        "course_id": 24,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 1: Topic for Course 24",
+            "duration": "16:35",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course24-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 62,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 24, Module 1."
+    },
+    {
+        "course_id": 24,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Topic for Course 24",
+            "duration": "16:43",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course24-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 149,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 24, Module 2."
+    },
+    {
+        "course_id": 24,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 3: Topic for Course 24",
+            "duration": "15:33",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course24-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 104,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 24, Module 3."
+    },
+    {
+        "course_id": 24,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 4: Topic for Course 24",
+            "duration": "16:51",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course24-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 70,
+            "dislikes": 5
+        },
+        "content_text": "Description for Course 24, Module 4."
+    },
+    {
+        "course_id": 24,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 5: Topic for Course 24",
+            "duration": "21:28",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course24-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 185,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 24, Module 5."
+    },
+    {
+        "course_id": 24,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 6: Topic for Course 24",
+            "duration": "22:48",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course24-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 114,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 24, Module 6."
+    },
+    {
+        "course_id": 25,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 1: Topic for Course 25",
+            "duration": "10:26",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course25-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 94,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 25, Module 1."
+    },
+    {
+        "course_id": 25,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Topic for Course 25",
+            "duration": "20:09",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course25-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 75,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 25, Module 2."
+    },
+    {
+        "course_id": 26,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Topic for Course 26",
+            "duration": "10:30",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course26-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 68,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 26, Module 1."
+    },
+    {
+        "course_id": 26,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 2: Topic for Course 26",
+            "duration": "11:09",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course26-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 195,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 26, Module 2."
+    },
+    {
+        "course_id": 27,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 1: Topic for Course 27",
+            "duration": "11:54",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course27-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 139,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 27, Module 1."
+    },
+    {
+        "course_id": 27,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 2: Topic for Course 27",
+            "duration": "18:09",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course27-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 104,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 27, Module 2."
+    },
+    {
+        "course_id": 27,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Topic for Course 27",
+            "duration": "15:20",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course27-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 130,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 27, Module 3."
+    },
+    {
+        "course_id": 27,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 4: Topic for Course 27",
+            "duration": "21:31",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course27-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 76,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 27, Module 4."
+    },
+    {
+        "course_id": 27,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 5: Topic for Course 27",
+            "duration": "21:55",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course27-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 69,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 27, Module 5."
+    },
+    {
+        "course_id": 27,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 6: Topic for Course 27",
+            "duration": "25:39",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course27-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 150,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 27, Module 6."
+    },
+    {
+        "course_id": 28,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 1: Topic for Course 28",
+            "duration": "11:30",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course28-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 57,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 28, Module 1."
+    },
+    {
+        "course_id": 28,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 2: Topic for Course 28",
+            "duration": "10:22",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course28-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 119,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 28, Module 2."
+    },
+    {
+        "course_id": 28,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 3: Topic for Course 28",
+            "duration": "10:31",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course28-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 92,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 28, Module 3."
+    },
+    {
+        "course_id": 29,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Topic for Course 29",
+            "duration": "16:28",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course29-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 196,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 29, Module 1."
+    },
+    {
+        "course_id": 29,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 2: Topic for Course 29",
+            "duration": "24:21",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course29-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 142,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 29, Module 2."
+    },
+    {
+        "course_id": 29,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 3: Topic for Course 29",
+            "duration": "22:13",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course29-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 84,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 29, Module 3."
+    },
+    {
+        "course_id": 29,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 4: Topic for Course 29",
+            "duration": "20:59",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course29-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 57,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 29, Module 4."
+    },
+    {
+        "course_id": 29,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 5: Topic for Course 29",
+            "duration": "12:09",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course29-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 65,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 29, Module 5."
+    },
+    {
+        "course_id": 29,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 6: Topic for Course 29",
+            "duration": "13:44",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course29-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 71,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 29, Module 6."
+    },
+    {
+        "course_id": 30,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 1: Topic for Course 30",
+            "duration": "22:33",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course30-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 143,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 30, Module 1."
+    },
+    {
+        "course_id": 30,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 2: Topic for Course 30",
+            "duration": "13:30",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course30-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 63,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 30, Module 2."
+    },
+    {
+        "course_id": 30,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 3: Topic for Course 30",
+            "duration": "14:45",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course30-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 111,
+            "dislikes": 7
+        },
+        "content_text": "Description for Course 30, Module 3."
+    },
+    {
+        "course_id": 30,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 4: Topic for Course 30",
+            "duration": "21:19",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course30-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 170,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 30, Module 4."
+    },
+    {
+        "course_id": 31,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 1: Topic for Course 31",
+            "duration": "25:54",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course31-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 136,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 31, Module 1."
+    },
+    {
+        "course_id": 31,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 2: Topic for Course 31",
+            "duration": "20:01",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course31-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 135,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 31, Module 2."
+    },
+    {
+        "course_id": 31,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 3: Topic for Course 31",
+            "duration": "13:57",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course31-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 87,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 31, Module 3."
+    },
+    {
+        "course_id": 32,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 1: Topic for Course 32",
+            "duration": "15:04",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course32-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 122,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 32, Module 1."
+    },
+    {
+        "course_id": 32,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0OHLbVEOq04?si=olj1V-18r_vy8tVw",
+        "content_data": {
+            "title": "Module 2: Topic for Course 32",
+            "duration": "14:08",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course32-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 151,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 32, Module 2."
+    },
+    {
+        "course_id": 32,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 3: Topic for Course 32",
+            "duration": "25:41",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course32-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 174,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 32, Module 3."
+    },
+    {
+        "course_id": 32,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 4: Topic for Course 32",
+            "duration": "21:36",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course32-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 187,
+            "dislikes": 3
+        },
+        "content_text": "Description for Course 32, Module 4."
+    },
+    {
+        "course_id": 32,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 5: Topic for Course 32",
+            "duration": "14:41",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course32-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 78,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 32, Module 5."
+    },
+    {
+        "course_id": 32,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 6: Topic for Course 32",
+            "duration": "21:26",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course32-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 110,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 32, Module 6."
+    },
+    {
+        "course_id": 33,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 1: Topic for Course 33",
+            "duration": "16:27",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course33-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 91,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 33, Module 1."
+    },
+    {
+        "course_id": 33,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 2: Topic for Course 33",
+            "duration": "20:50",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course33-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 123,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 33, Module 2."
+    },
+    {
+        "course_id": 33,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 3: Topic for Course 33",
+            "duration": "11:34",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course33-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 131,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 33, Module 3."
+    },
+    {
+        "course_id": 33,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 4: Topic for Course 33",
+            "duration": "11:47",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course33-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 101,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 33, Module 4."
+    },
+    {
+        "course_id": 33,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 5: Topic for Course 33",
+            "duration": "11:39",
+            "module_number": 5,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course33-module5.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 121,
+            "dislikes": 4
+        },
+        "content_text": "Description for Course 33, Module 5."
+    },
+    {
+        "course_id": 33,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 6: Topic for Course 33",
+            "duration": "20:48",
+            "module_number": 6,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course33-module6.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 85,
+            "dislikes": 2
+        },
+        "content_text": "Description for Course 33, Module 6."
+    },
+    {
+        "course_id": 34,
+        "content_type": "video",
+        "content_url": "https://youtu.be/6USgwLa-7ks?si=6iBOlu4kWqO_K414",
+        "content_data": {
+            "title": "Module 1: Topic for Course 34",
+            "duration": "15:53",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course34-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 126,
+            "dislikes": 0
+        },
+        "content_text": "Description for Course 34, Module 1."
+    },
+    {
+        "course_id": 34,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 2: Topic for Course 34",
+            "duration": "12:09",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course34-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 113,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 34, Module 2."
+    },
+    {
+        "course_id": 34,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Topic for Course 34",
+            "duration": "10:08",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course34-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 74,
+            "dislikes": 8
+        },
+        "content_text": "Description for Course 34, Module 3."
+    },
+    {
+        "course_id": 35,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 1: Topic for Course 35",
+            "duration": "14:12",
+            "module_number": 1,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course35-module1.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 180,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 35, Module 1."
+    },
+    {
+        "course_id": 35,
+        "content_type": "video",
+        "content_url": "https://youtu.be/tcR5I2pPk3o?si=rIstjuombROUzqOH",
+        "content_data": {
+            "title": "Module 2: Topic for Course 35",
+            "duration": "25:34",
+            "module_number": 2,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course35-module2.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 153,
+            "dislikes": 9
+        },
+        "content_text": "Description for Course 35, Module 2."
+    },
+    {
+        "course_id": 35,
+        "content_type": "video",
+        "content_url": "https://youtu.be/_z27qjHjqiM?si=tuHhv1vXEiNYN_-G",
+        "content_data": {
+            "title": "Module 3: Topic for Course 35",
+            "duration": "22:32",
+            "module_number": 3,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course35-module3.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 91,
+            "dislikes": 10
+        },
+        "content_text": "Description for Course 35, Module 3."
+    },
+    {
+        "course_id": 35,
+        "content_type": "video",
+        "content_url": "https://youtu.be/0DKOUFrP7xI?si=1r0TUY84n5h0BA_C",
+        "content_data": {
+            "title": "Module 4: Topic for Course 35",
+            "duration": "10:21",
+            "module_number": 4,
+            "slides_url": "https://pdfobject.com/pdf/sample.pdf",
+            "resources": [
+                "https://example.com/resources/course35-module4.pdf",
+                "https://pdfobject.com/pdf/sample.pdf"
+            ],
+            "likes": 78,
+            "dislikes": 1
+        },
+        "content_text": "Description for Course 35, Module 4."
+    }
+]

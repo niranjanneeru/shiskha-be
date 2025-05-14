@@ -1,0 +1,642 @@
+[
+  {
+    "title": "Generative AI for Business Intelligence",
+    "description": "Unlock the potential of generative AI in BI. Learn how to leverage advanced models to generate insights, automate reporting, and drive strategic decisions.",
+    "data": {
+      "price": 65,
+      "instructors": [
+        {
+          "name": "Dr. Jane Smith",
+          "university": "Massachusetts Institute of Technology",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Prof. John Doe",
+          "university": "Stanford University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "Harvard Business School"
+      },
+      "level": "Intermediate",
+      "duration": "1 month - 10 hrs/week",
+      "rating": 4.8,
+      "number_enrollment": 1500,
+      "number_of_reviews": 245,
+      "skills_earned": [
+        "Prompt Engineering",
+        "Narrative Generation",
+        "BI Dashboard Design",
+        "Automated Reporting"
+      ],
+      "about": "This specialization teaches you to integrate generative AI pipelines into BI workflows, from data ingestion to narrative generation.",
+      "outcome": [
+        "Design AI-powered dashboards",
+        "Automate executive summaries",
+        "Implement prompt-based report generation"
+      ],
+      "testimonials": [
+        {
+          "message": "After this course, our team reduced report turnaround by 60% using AI-generated insights.",
+          "name": "Alice Johnson",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Student since 2018"
+        },
+        {
+          "message": "The hands-on projects gave me confidence to deploy AI in our BI stack within weeks.",
+          "name": "Michael Lee",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Data Analyst since 2019"
+        },
+        {
+          "message": "I landed a promotion after showcasing an AI-generated dashboard at our quarterly review.",
+          "name": "Sara Patel",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Business Intelligence Manager since 2017"
+        },
+        {
+          "message": "Excellent balance of theory and practice—perfect for advancing my BI career.",
+          "name": "David Kim",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "BI Developer since 2020"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Data Mining Specialization",
+    "description": "Analyze text, discover patterns, and visualize data. Solve real-world data mining challenges.",
+    "data": {
+      "price": 80,
+      "instructors": [
+        {
+          "name": "Dr. Maria Garcia",
+          "university": "University of California, Berkeley",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Ahmed Khan",
+          "university": "Carnegie Mellon University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "UC Berkeley School of Information"
+      },
+      "level": "Beginner",
+      "duration": "2 months - 8 hrs/week",
+      "rating": 4.6,
+      "number_enrollment": 1200,
+      "number_of_reviews": 200,
+      "skills_earned": [
+        "Clustering & Segmentation",
+        "Classification Models",
+        "Association Rule Mining",
+        "Data Visualization"
+      ],
+      "about": "This specialization covers core data mining algorithms—clustering, classification, and association rules—through hands-on projects.",
+      "outcome": [
+        "Implement k-means and hierarchical clustering",
+        "Build decision tree and SVM classifiers",
+        "Extract association rules from transactional data",
+        "Design interactive visualizations of patterns"
+      ],
+      "testimonials": [
+        {
+          "message": "The practical labs demystified complex algorithms—I applied them immediately at work.",
+          "name": "Rachel Adams",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Analyst since 2019"
+        },
+        {
+          "message": "I built my first recommendation engine after completing the capstone project.",
+          "name": "Brian Wu",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Data Scientist since 2018"
+        },
+        {
+          "message": "Excellent pacing and clear explanations—perfect for beginners.",
+          "name": "Elena Petrova",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Graduate Student since 2020"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Machine Learning Foundations",
+    "description": "Deep dive into machine learning fundamentals: supervised, unsupervised, and reinforcement learning.",
+    "data": {
+      "price": 100,
+      "instructors": [
+        {
+          "name": "Prof. Emily Zhang",
+          "university": "University of Oxford",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Li Wei",
+          "university": "Tsinghua University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "Oxford Department of Computer Science"
+      },
+      "level": "Beginner",
+      "duration": "3 months - 6 hrs/week",
+      "rating": 4.7,
+      "number_enrollment": 1800,
+      "number_of_reviews": 300,
+      "skills_earned": [
+        "Regression Analysis",
+        "Decision Trees & Ensembles",
+        "Clustering Techniques",
+        "Reinforcement Learning Basics"
+      ],
+      "about": "Build a solid foundation in ML algorithms, mathematical underpinnings, and Python implementations with real-world datasets.",
+      "outcome": [
+        "Develop and evaluate regression models",
+        "Train ensemble classifiers",
+        "Implement k-means and DBSCAN clustering",
+        "Understand Markov decision processes"
+      ],
+      "testimonials": [
+        {
+          "message": "The math refreshers were invaluable—ML concepts finally clicked for me.",
+          "name": "Carlos Mendes",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Software Engineer since 2017"
+        },
+        {
+          "message": "I applied reinforcement learning to optimize our inventory management.",
+          "name": "Priya Nair",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Operations Analyst since 2020"
+        },
+        {
+          "message": "The capstone project cemented my understanding—I now mentor juniors in ML.",
+          "name": "Tomás Rodríguez",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "ML Engineer since 2018"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Deep Learning Specialization",
+    "description": "Explore neural network architectures from basic perceptrons to advanced transformers, and learn to train, tune, and deploy deep models.",
+    "data": {
+      "price": 80,
+      "instructors": [
+        {
+          "name": "Dr. Ankit Patel",
+          "university": "Indian Institute of Technology Bombay",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Prof. Laura Müller",
+          "university": "Technical University of Munich",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Carlos Rodriguez",
+          "university": "University of California, San Diego",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "IIT Bombay Department of Computer Science"
+      },
+      "level": "Intermediate",
+      "duration": "4 months - 10 hrs/week",
+      "rating": 4.9,
+      "number_enrollment": 2200,
+      "number_of_reviews": 410,
+      "skills_earned": [
+        "Convolutional Neural Networks",
+        "Recurrent Neural Networks",
+        "Attention Mechanisms",
+        "Transformer Models"
+      ],
+      "about": "This specialization covers the theory and practice of deep learning, including hands-on labs with PyTorch and TensorFlow.",
+      "outcome": [
+        "Implement and train CNNs/RNNs",
+        "Apply attention in sequence models",
+        "Fine-tune pre-trained transformers",
+        "Deploy models with ONNX"
+      ],
+      "testimonials": [
+        {
+          "message": "The transformer module was a game-changer for my NLP projects.",
+          "name": "Emily Davis",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "AI Engineer since 2019"
+        },
+        {
+          "message": "I built a real-time object detector following the CV lab. Amazing!",
+          "name": "Rahul Menon",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Robotics Researcher since 2018"
+        },
+        {
+          "message": "Clear explanations and challenging assignments—highly recommend.",
+          "name": "Yuna Kim",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Graduate Student since 2020"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Natural Language Processing",
+    "description": "Master NLP pipelines: from text preprocessing to building and deploying custom language models.",
+    "data": {
+      "price": 90,
+      "instructors": [
+        {
+          "name": "Prof. Sophie Lee",
+          "university": "University of Toronto",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Carlos Alvarez",
+          "university": "University of Cambridge",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Ming Zhao",
+          "university": "Peking University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "Toronto NLP Lab"
+      },
+      "level": "Intermediate",
+      "duration": "2 months - 12 hrs/week",
+      "rating": 4.7,
+      "number_enrollment": 1950,
+      "number_of_reviews": 365,
+      "skills_earned": [
+        "Tokenization & Embeddings",
+        "Sequence Labeling",
+        "Transformer Fine-Tuning",
+        "Text Generation"
+      ],
+      "about": "Learn modern NLP techniques, including BERT and GPT fine-tuning, and deploy language services to production.",
+      "outcome": [
+        "Preprocess and embed text data",
+        "Train custom NER and sentiment models",
+        "Fine-tune transformer architectures",
+        "Serve models via REST APIs"
+      ],
+      "testimonials": [
+        {
+          "message": "I integrated a sentiment analysis API at my company within two weeks.",
+          "name": "Olivia Martinez",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Product Manager since 2017"
+        },
+        {
+          "message": "NLP concepts finally made sense, thanks to the clear examples.",
+          "name": "Kenji Sato",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Data Scientist since 2018"
+        },
+        {
+          "message": "The deployment module helped me launch our chatbot in production.",
+          "name": "Amira Hassan",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Chatbot Developer since 2019"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Computer Vision Techniques",
+    "description": "Learn image processing, object detection, segmentation, and vision-based deep learning.",
+    "data": {
+      "price": 150,
+      "instructors": [
+        {
+          "name": "Dr. Yuki Tanaka",
+          "university": "University of Tokyo",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Prof. Miguel Santos",
+          "university": "University of São Paulo",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Anna Liu",
+          "university": "University of Toronto",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "Tokyo Vision Institute"
+      },
+      "level": "Intermediate",
+      "duration": "3 months - 10 hrs/week",
+      "rating": 4.8,
+      "number_enrollment": 2000,
+      "number_of_reviews": 375,
+      "skills_earned": [
+        "Image Preprocessing",
+        "Object Detection",
+        "Semantic Segmentation",
+        "Model Optimization"
+      ],
+      "about": "Implement classical computer vision and deep-learning approaches to solve real-world image and video tasks, with hands-on labs in PyTorch and OpenCV.",
+      "outcome": [
+        "Build and train object detectors",
+        "Apply semantic and instance segmentation",
+        "Optimize models for deployment",
+        "Develop real-time vision pipelines"
+      ],
+      "testimonials": [
+        {
+          "message": "This course taught me to deploy a real-time detector on our autonomous drone.",
+          "name": "Ravi Kumar",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Robotics Engineer since 2018"
+        },
+        {
+          "message": "Segmentation lab was challenging but incredibly rewarding—my research improved drastically.",
+          "name": "Sophia Nguyen",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "PhD Student since 2019"
+        },
+        {
+          "message": "I integrated CV models into our QC pipeline, reducing defects by 30%.",
+          "name": "Liam O’Connor",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Quality Engineer since 2020"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Big Data Engineering",
+    "description": "Design and build scalable data pipelines using Hadoop, Spark, and cloud-native tools.",
+    "data": {
+      "price": 120,
+      "instructors": [
+        {
+          "name": "Prof. Elena Petrova",
+          "university": "Moscow State University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Samuel Brown",
+          "university": "University of Melbourne",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Daniel Wilson",
+          "university": "Massachusetts Institute of Technology",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "MSU Data Lab"
+      },
+      "level": "Advanced",
+      "duration": "4 months - 15 hrs/week",
+      "rating": 4.5,
+      "number_enrollment": 1700,
+      "number_of_reviews": 280,
+      "skills_earned": [
+        "Hadoop Ecosystem",
+        "Spark Core & SQL",
+        "Kafka Streaming",
+        "Cloud Data Warehouses"
+      ],
+      "about": "Build end-to-end data architectures: ingestion, ETL, storage, and real-time analytics at scale using open-source and cloud tools.",
+      "outcome": [
+        "Implement Spark transformation and actions",
+        "Design and optimize data lakes",
+        "Develop Kafka-based streaming pipelines",
+        "Configure and tune cloud warehouses"
+      ],
+      "testimonials": [
+        {
+          "message": "Our ETL runtime dropped from 6 hours to under 1 hour after applying course techniques.",
+          "name": "Priyanka Desai",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Data Engineer since 2017"
+        },
+        {
+          "message": "The Kafka module helped us build a robust streaming analytics system.",
+          "name": "Ahmed El-Sayed",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Streaming Architect since 2019"
+        },
+        {
+          "message": "I led our migration to a cloud data warehouse with confidence thanks to the labs.",
+          "name": "Julia Roberts",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "BI Manager since 2018"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Data Visualization with Python",
+    "description": "Transform data into interactive, shareable visual stories using Python libraries and dashboard tools.",
+    "data": {
+      "price": 120,
+      "instructors": [
+        {
+          "name": "Dr. Priya Nair",
+          "university": "University of Edinburgh",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Prof. David Kim",
+          "university": "Seoul National University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Lucas Martinez",
+          "university": "Stanford University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "Edinburgh Data Lab"
+      },
+      "level": "Beginner",
+      "duration": "1 month - 10 hrs/week",
+      "rating": 4.6,
+      "number_enrollment": 1300,
+      "number_of_reviews": 180,
+      "skills_earned": [
+        "Interactive Dashboards",
+        "Publication-Quality Plots",
+        "Web Deployment",
+        "Data Storytelling"
+      ],
+      "about": "Learn Matplotlib, Seaborn, Plotly, and Dash to build compelling charts and dashboards.",
+      "outcome": [
+        "Create interactive dashboards",
+        "Design publication-quality plots",
+        "Deploy visualizations to the web",
+        "Craft compelling data stories"
+      ],
+      "testimonials": [
+        {
+          "message": "Stakeholders now engage with our data through the dashboards I built.",
+          "name": "Carlos Hernandez",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Business Analyst since 2019"
+        },
+        {
+          "message": "The storytelling module helped me improve my presentations dramatically.",
+          "name": "Mei Wong",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Marketing Specialist since 2018"
+        },
+        {
+          "message": "I launched an interactive sales dashboard that boosted transparency across teams.",
+          "name": "Oliver Thompson",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Sales Operations since 2020"
+        }
+      ]
+    }
+  },
+  {
+    "title": "MLOps & Model Deployment",
+    "description": "Operationalize machine learning: CI/CD for models, monitoring, and scalable serving.",
+    "data": {
+      "price": 120,
+      "instructors": [
+        {
+          "name": "Prof. Sara Johnson",
+          "university": "University of Washington",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Marco Rossi",
+          "university": "Politecnico di Milano",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Akira Yamamoto",
+          "university": "University of Tokyo",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "UW eScience Institute"
+      },
+      "level": "Advanced",
+      "duration": "2 months - 12 hrs/week",
+      "rating": 4.9,
+      "number_enrollment": 1400,
+      "number_of_reviews": 320,
+      "skills_earned": [
+        "Dockerizing Models",
+        "Kubernetes Orchestration",
+        "Monitoring & Alerting",
+        "CI/CD Pipelines"
+      ],
+      "about": "Set up end-to-end ML pipelines: versioning, containerization, orchestration, and monitoring.",
+      "outcome": [
+        "Dockerize and containerize ML models",
+        "Deploy models on Kubernetes",
+        "Monitor model performance and drift",
+        "Automate CI/CD for machine learning"
+      ],
+      "testimonials": [
+        {
+          "message": "Our rollouts are fully automated and reliable thanks to this course.",
+          "name": "Nathan Brooks",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "ML Engineer since 2018"
+        },
+        {
+          "message": "The monitoring labs helped us catch drift before it impacted users.",
+          "name": "Leila Ahmed",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Data Ops Specialist since 2019"
+        },
+        {
+          "message": "I built a full CI/CD pipeline for our models within weeks.",
+          "name": "Viktor Svensson",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "DevOps Engineer since 2017"
+        }
+      ]
+    }
+  },
+  {
+    "title": "AI Ethics & Governance",
+    "description": "Explore the ethical, legal, and social implications of AI and learn frameworks for responsible deployment.",
+      "data": {
+      "price": 30,
+      "instructors": [
+        {
+          "name": "Dr. Anita Rao",
+          "university": "London School of Economics",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Prof. Michael Green",
+          "university": "University of Toronto",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        },
+        {
+          "name": "Dr. Fatima Al-Mansouri",
+          "university": "New York University",
+          "profile_pic": "https://thispersondoesnotexist.com/"
+        }
+      ],
+      "course_creator": {
+        "university": "LSE Data Policy Centre"
+      },
+      "level": "Intermediate",
+      "duration": "1 month - 8 hrs/week",
+      "rating": 4.4,
+      "number_enrollment": 900,
+      "number_of_reviews": 150,
+      "skills_earned": [
+        "Ethical AI Audits",
+        "Fairness-Aware Algorithms",
+        "Privacy Frameworks",
+        "Governance Policies"
+      ],
+      "about": "Delve into bias, transparency, privacy, and regulation to build AI systems that are fair and accountable.",
+      "outcome": [
+        "Conduct ethical AI audits",
+        "Apply fairness-aware machine learning",
+        "Draft AI governance policies",
+        "Ensure regulatory compliance"
+      ],
+      "testimonials": [
+        {
+          "message": "Our compliance framework was robustly informed by this course.",
+          "name": "Sophie Laurent",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Policy Analyst since 2018"
+        },
+        {
+          "message": "I led a successful bias audit at my company after these modules.",
+          "name": "Jae-Min Park",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Data Scientist since 2019"
+        },
+        {
+          "message": "The case studies were eye-opening and directly applicable.",
+          "name": "Fatima Khan",
+          "pic": "https://thispersondoesnotexist.com/",
+          "role": "Ethics Consultant since 2017"
+        }
+      ]
+    }
+  }
+]
