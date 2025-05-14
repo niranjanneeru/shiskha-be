@@ -6,6 +6,7 @@ from io import BytesIO
 from PIL import Image
 import uuid
 from datetime import date
+from PyPDF2 import PdfReader, PdfWriter
 
 import boto3
 
@@ -33,95 +34,56 @@ router = APIRouter()
 
 def generate_upload_certificate(user: User, course: Course, completion_status_row: tuple):
     certificate_id = f"{user.id}-{course.id}"
-    # 1) Generate QR code
+    
+    reader = PdfReader("/home/niranjan/Downloads/c.pdf")
+    first_page = reader.pages[0]
+    width = float(first_page.mediabox.width)
+    height = float(first_page.mediabox.height)
+
+    # 2) Create an in-memory PDF for overlays
+    overlay_buffer = BytesIO()
+    c = canvas.Canvas(overlay_buffer, pagesize=(width, height))
+
+    # 3) Draw course name
+    c.setFont("Helvetica-Bold", 30)
+    c.drawCentredString(width/2, height - 250, user.nickname)
+
+    # 4) Draw student name
+    c.setFont("Helvetica-Bold", 22)
+    c.drawCentredString(width/2, height - 350, course.name)
+
+    # 5) Generate and draw the QR code
     qr = qrcode.make(f"https://localhost:5173/verify?code={certificate_id}")
     qr_buffer = BytesIO()
     qr.save(qr_buffer)
     qr_buffer.seek(0)
-    qr_img = Image.open(qr_buffer)
+    qr_size = 100
+    with open(f"/home/niranjan/Downloads/{certificate_id}.png", "wb") as qr_file:
+        qr_file.write(qr_buffer.getvalue())
+    c.drawImage(f"/home/niranjan/Downloads/{certificate_id}.png", width - qr_size - 50, 50, qr_size, qr_size)
 
-    # 2) Prepare PDF canvas
-    pdf_buffer = BytesIO()
-    c = canvas.Canvas(pdf_buffer, pagesize=A4)
-    width, height = A4
-
-    # 3) Draw outer decorative border
-    c.setLineWidth(4)
-    c.setStrokeColor(colors.darkblue)
-    c.rect(30, 30, width - 60, height - 60, stroke=1, fill=0)
-    # Inner border
-    c.setLineWidth(2)
-    c.setStrokeColor(colors.lightblue)
-    c.rect(40, 40, width - 80, height - 80, stroke=1, fill=0)
-
-    # 4) Draw faint watermark
-    c.saveState()
-    c.setFont("Helvetica-Bold", 72)
-    c.setFillColorRGB(0.85, 0.85, 0.85)
-    c.translate(width/2, height/2)
-    c.rotate(45)
-    c.drawCentredString(0, 0, "CERTIFIED")
-    c.restoreState()
-
-    # 5) (Optional) Draw organization logo at top-left
-    #    Replace 'assets/logo.png' with your actual logo path or buffer
-    try:
-        logo = Image.open("assets/logo.png")
-        logo_buffer = BytesIO()
-        logo.save(logo_buffer, format="PNG")
-        logo_buffer.seek(0)
-        c.drawInlineImage(logo_buffer, 50, height - 120, 100, 100)
-    except FileNotFoundError:
-        pass  # no logo, skip
-
-    # 6) Title
-    c.setFont("Helvetica-Bold", 28)
-    c.setFillColor(colors.darkblue)
-    c.drawCentredString(width/2, height - 100, "Certificate of Completion")
-
-    # 7) User & Course details
-    c.setFont("Helvetica", 14)
-    c.setFillColor(colors.black)
-    c.drawCentredString(width/2, height - 150, f"Awarded to: {user.nickname}")
-    c.drawCentredString(width/2, height - 170, f"For successfully completing: {course.name}")
-
-    # 8) Issued date & code
-    c.drawCentredString(width/2, height - 210, f"Issued on: {date.today().isoformat()}")
-    c.drawCentredString(width/2, height - 230, f"Certificate ID: {uuid.uuid4()}")
-
-    # 9) Decorative seal (gold circle with text)
-    seal_radius = 40
-    seal_x, seal_y = 150, 150
-    c.setLineWidth(3)
-    c.setStrokeColor(colors.gold)
-    c.circle(seal_x, seal_y, seal_radius, stroke=1, fill=0)
-    c.setFont("Helvetica-Bold", 10)
-    c.setFillColor(colors.gold)
-    c.drawCentredString(seal_x, seal_y, "Seal of Excellence")
-
-    # 10) Signature line
-    sig_x, sig_y = width - 250, 120
-    c.setStrokeColor(colors.black)
-    c.setLineWidth(1)
-    c.line(sig_x, sig_y, sig_x + 200, sig_y)
-    c.setFont("Helvetica-Oblique", 12)
-    c.drawString(sig_x, sig_y - 15, "Director Signature")
-
-    # 11) QR code in bottom-right
-    c.drawInlineImage(qr_img, width - 150, 50, 100, 100)
-
-    # finalize
-    c.showPage()
+    # 6) Finish overlay
     c.save()
-    pdf_buffer.seek(0)
+    overlay_buffer.seek(0)
 
-    pdf_buffer.seek(0)
-    s3.upload_fileobj(
-        Fileobj=pdf_buffer,
+    # 7) Merge overlay onto the template
+    overlay_pdf = PdfReader(overlay_buffer)
+    base_page = reader.pages[0]
+    base_page.merge_page(overlay_pdf.pages[0])
+
+    # 8) Write out the new PDF locally
+    writer = PdfWriter()
+    writer.add_page(base_page)
+    with open(f"/home/niranjan/Downloads/{certificate_id}.pdf", "wb") as out_f:
+        writer.write(out_f)
+
+    with open(f"/home/niranjan/Downloads/{certificate_id}.pdf", "rb") as pdf_file:
+        s3.upload_fileobj(
+            Fileobj=pdf_file,
         Bucket=S3_BUCKET_NAME,
         Key=f"certificates/{certificate_id}.pdf",
         ExtraArgs={"ContentType": "application/pdf"}
-    )
+        )
 
     presigned_url = s3.generate_presigned_url(
         "get_object",
@@ -199,6 +161,32 @@ async def create_certificate(course_id: int, request: Request):
         session.add(certificate)
         await session.commit()
         await session.refresh(certificate)
+
+        return {
+            "id": certificate.id,
+            "user_id": certificate.user_id,
+            "course_id": certificate.course_id,
+            "issue_date": certificate.issue_date,
+            "certificate_url": certificate.certificate_url
+        }
+
+@router.get("/verify/{course_id}/{user_id}",
+            response_model=dict,
+            status_code=status.HTTP_200_OK,
+            tags=["Learning - Certificate"],
+            )
+async def get_certificate(course_id: int, user_id: int):
+    async with session_factory() as session:
+        certificate_query = select(Certificate).where(
+            and_(
+                Certificate.course_id == course_id,
+                Certificate.user_id == user_id
+            )
+        )
+        certificate_result = await session.execute(certificate_query)
+        certificate = certificate_result.scalars().first()
+        if not certificate:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Certificate not found.")
 
         return {
             "id": certificate.id,
