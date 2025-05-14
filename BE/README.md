@@ -1,6 +1,5 @@
-# FastAPI Boilerplate
+# Shiksha
 
-A FastAPI backend application with user management, learning modules, and AI-powered features including a course-specific chatbot and content summarization.
 
 ## Core Features
 
