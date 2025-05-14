@@ -59,7 +59,7 @@ def make_middleware() -> list[Middleware]:
     middleware = [
         Middleware(
             CORSMiddleware,
-            allow_origins=["*"],
+            allow_origins=["http://localhost:5173", "https://evident-upward-mudfish.ngrok-free.app"],
             allow_credentials=True,
             allow_methods=["*"],
             allow_headers=["*"],
