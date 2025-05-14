@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Razorpay Checkout Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    #pay-btn { 
+      background-color: #F37254; 
+      color: #fff; 
+      border: none; 
+      padding: 1rem 2rem; 
+      font-size: 1rem; 
+      cursor: pointer; 
+      border-radius: 4px; 
+    }
+    #pay-btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <h1>Pay with Razorpay</h1>
+  <button id="pay-btn">Pay ₹499</button>
+
+  <!-- Razorpay Checkout script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    document.getElementById('pay-btn').addEventListener('click', async () => {
+      const resp = await fetch('http://localhost:8000/api/v1/learning/specialisations/register/7', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3NDcxODAyMDZ9.ZLJgpkVUfppWWjvKn1vZp9jKykOxL8ZMM36XEDOUmdM' },
+        body: JSON.stringify({ amount: 499 })
+      });
+      const { amount, currency, order_id, razorpay_key_id } = await resp.json();
+
+      const options = {
+        key: razorpay_key_id,           // Replace with your Razorpay Key ID
+        amount: amount,         // Amount in paise
+        currency: currency,
+        name: 'My Company',
+        description: 'Test Transaction',
+        order_id: order_id,           // Order ID from backend
+        handler: function (response) {
+          // Handle the success callback
+          console.log('Payment Successful');
+          console.log('Payment ID:', response.razorpay_payment_id);
+          console.log('Order ID:',   response.razorpay_order_id);
+          console.log('Signature:',  response.razorpay_signature);
+          alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+        },
+        prefill: {
+          name:    'Gaurav Kumar',
+          email:   'gaurav.kumar@example.com',
+          contact: '9999999999'
+        },
+        notes: {
+          address: 'Corporate Office'
+        },
+        theme: {
+          color: '#F37254'
+        }
+      };
+
+      const rzp = new Razorpay(options);
+      rzp.open();
+    });
+  </script>
+</body>
+</html>
