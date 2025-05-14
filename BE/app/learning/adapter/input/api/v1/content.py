@@ -3,6 +3,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import selectinload
 from app.learning.domain.models import CourseContents, Course
 from app.user.domain.entity.user import User
+from core.ai.chatbot import chat
 from core.db.session import session_factory
 from core.fastapi.dependencies.permission import IsAuthenticated, PermissionDependency
 from fastapi import HTTPException
@@ -39,3 +40,18 @@ async def get_course_contents(course_id: int, request: Request):
         }
         for content in result.scalars().all()
     ]
+
+
+@router.post(
+    "/{course_id}/chat",
+    response_model=dict,
+    status_code=status.HTTP_200_OK
+)
+async def course_chat(course_id: int, request: Request):
+    body = await request.json()
+    response = chat(
+        messages=body.get("messages"),
+        course_id=course_id
+    )
+    return {"response": response}
+
