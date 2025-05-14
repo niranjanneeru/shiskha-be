@@ -23,6 +23,7 @@ class Config(BaseSettings):
     PISTON_API:str = "http://localhost:2000"
     RAZORPAY_KEY_ID: str = os.getenv("RAZORPAY_KEY_ID")
     RAZORPAY_KEY_SECRET: str = os.getenv("RAZORPAY_KEY_SECRET")
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
 
 
 class TestConfig(Config):
