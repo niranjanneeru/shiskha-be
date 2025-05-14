@@ -1,7 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import YouTube from "react-youtube";
 import { ChevronRight, Menu, SmartDisplay } from "@mui/icons-material";
 import "./CoursePage.css";
+import { useLazyGetCourseContentsQuery, useLazyGetCourseDetailsQuery } from "../store/api/codeApi";
+import { useParams } from "react-router-dom";
 
 const getYouTubeVideoId = (url) => {
   // Handle different YouTube URL formats
@@ -20,6 +22,16 @@ const CoursePage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [sectionOpen, setSectionOpen] = useState({});
+
+  const { id } = useParams<{ id: string }>();
+  const [getCourseDetails, { data: courseDetails }] = useLazyGetCourseDetailsQuery();
+  const [getCourseContents, { data: courseContents }] = useLazyGetCourseContentsQuery();
+
+  useEffect(() => {
+    getCourseDetails(id || '');
+    getCourseContents(id || '');
+  }, [getCourseDetails, id, getCourseContents]);
+  
 
   // Example quiz data
   const quiz = {
@@ -107,6 +119,7 @@ const CoursePage = () => {
     // Add other sections similarly
   ];
 
+  console.log(courseContents?.[selectedVideo]?.content_url)
   const tabs = [
     { id: "transcript", label: "Transcript" },
     { id: "notes", label: "Notes" },
@@ -138,7 +151,7 @@ const CoursePage = () => {
 
           {isSidebarOpen && (
             <>
-              {videos.map((section, sectionIndex) => (
+              {courseContents?.map((section, sectionIndex) => (
                 <div key={sectionIndex} className="section mb-4 w-full">
                   <h3
                     className="text-sm font-semibold px-4 py-2 text-black"
@@ -149,29 +162,28 @@ const CoursePage = () => {
                       }))
                     }
                   >
-                    {section.title}
+                    {section.content_text}
                   </h3>
                   {sectionOpen[sectionIndex] &&
-                    section.items.map((video, videoIndex) => (
                       <div
-                        key={videoIndex}
+                        key={`video-${sectionIndex}`}
                         className={`flex items-start gap-3 px-4 py-2 cursor-pointer transition-colors ${
-                        selectedVideo === videoIndex
-                          ? "bg-[#EDF5FF] border-l-4 border-blue-600 pl-3"
+                        selectedVideo === sectionIndex
+                          ? "bg-[#9eb8d8] border-l-4 border-blue-600 pl-3"
                           : "hover:bg-[#F8F9FB]"
                       }`}
-                      onClick={() => setSelectedVideo(videoIndex)}
+                      onClick={() => setSelectedVideo(sectionIndex)}
                     >
                       <span className="text-green-600 mt-1"><SmartDisplay /></span>
                       <div className="flex flex-col">
                       <span className="text-black"><span className="text-sm font-semibold text-black">Video:</span>
-                        <span className="text-sm">{video.title}</span></span>
+                        <span className="text-sm">{section.content_text}</span></span>
                         <span className="text-xs text-gray-500 font-semibold">
-                          {video.duration}
+                          {section?.content_data?.duration}
                         </span>
                       </div>
                     </div>
-                  ))}
+                  }
                 </div>
               ))}
             </>
@@ -183,14 +195,14 @@ const CoursePage = () => {
           {/* Breadcrumb */}
           <div className="breadcrumb">
             <span className="text-blue-500 text-sm">
-              English for Common Interactions in the Workplace: Basic Level
+              {courseDetails?.specialisation?.name}
             </span>
             <ChevronRight className="w-4 h-4 mx-4" />
-            <span className="text-blue-500 text-sm">Module 2</span>
-            <ChevronRight className="w-4 h-4 mx-4" />
+            <span className="text-blue-500 text-sm">{courseDetails?.name}</span>
+            {/* <ChevronRight className="w-4 h-4 mx-4" />
             <span className="text-blue-500 text-sm">
               Model Situation 1: Gabriela meets a new colleague
-            </span>
+            </span> */}
           </div>
           <div className="video-container rounded-lg overflow-hidden relative">
             {showQuiz && (
@@ -227,7 +239,7 @@ const CoursePage = () => {
 
           <div className="video-details">
             <h2 className="text-2xl font-semibold text-black mb-2">
-              {videos[selectedVideo].items[0].title}
+              {courseContents?.[selectedVideo]?.content_Data?.title}
             </h2>
 
             {/* Tabs */}

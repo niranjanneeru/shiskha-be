@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Play, Star, Clock, Users, BookOpen, Award, CheckCircle, Calendar, FileText, Video, Download } from 'lucide-react';
 import { useCourses } from '../context/CourseContext';
 import { useAuth } from '../context/AuthContext';
 import Button from '../components/common/Button';
+import { useLazyGetCourseDetailsQuery, useLazyGetCoursesQuery } from '../store/api/codeApi';
 
 // Sample curriculum data
 const curriculumData = [
@@ -80,9 +81,14 @@ const getItemIcon = (type: string) => {
 const CourseDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { getCourseById, enrollInCourse, enrolledCourses } = useCourses();
+  const [getCourseDetails, { data: courseDetails }] = useLazyGetCourseDetailsQuery();
   const { isAuthenticated } = useAuth();
   const [activeTab, setActiveTab] = useState<'about' | 'curriculum' | 'instructor'>('about');
   const [expandedSections, setExpandedSections] = useState<string[]>(['1']);
+
+  useEffect(() => {
+    getCourseDetails(id || '');
+  }, [getCourseDetails, id]);
   
   const course = getCourseById(id || '');
   const isEnrolled = enrolledCourses.some(c => c.id === id);
@@ -91,7 +97,7 @@ const CourseDetailsPage: React.FC = () => {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen p-4">
         <h2 className="text-2xl font-bold mb-4">Course Not Found</h2>
-        <p className="text-gray-600 mb-6">The course you're looking for doesn't exist or has been removed.</p>
+        <p className="text-black-600 mb-6">The course you're looking for doesn't exist or has been removed.</p>
         <Link to="/courses">
           <Button>Back to Courses</Button>
         </Link>
@@ -149,50 +155,51 @@ const CourseDetailsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Course Header */}
-      <div className="bg-gradient-to-r from-[#0056D2] to-[#1E88E5] py-12">
+      <div className="py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Course Details */}
             <div className="lg:w-2/3">
               <div className="mb-4">
                 <span className="bg-blue-100 text-[#0056D2] text-sm font-medium px-3 py-1 rounded-full">
-                  {course.category}
+                  {courseDetails?.specialisation?.name}
                 </span>
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">{course.title}</h1>
-              <p className="text-blue-100 text-lg mb-6">{course.description}</p>
+              <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">{courseDetails?.name}</h1>
+              <p className="text-black-100 text-lg mb-6">{courseDetails?.data?.about}</p>
               
               <div className="flex flex-wrap items-center gap-4 mb-6">
-                <div className="flex items-center text-white">
+                <div className="flex items-center text-black">
                   <Star className="w-5 h-5 text-yellow-300 fill-current" />
-                  <span className="ml-1 font-medium">{course.rating}</span>
-                  <span className="ml-1 text-blue-100">({(course.enrolledCount / 1000).toFixed(1)}k students)</span>
+                  <span className="ml-1 font-medium">{courseDetails?.rating}</span>
+                  <span className="ml-1 text-black-100">({courseDetails?.data?.number_of_reviews}k students)</span>
                 </div>
-                <div className="flex items-center text-white">
+                <div className="flex items-center text-black">
                   <Clock className="w-5 h-5" />
-                  <span className="ml-1">{course.duration}</span>
+                  <span className="ml-1">{courseDetails?.data?.number_of_hours} hours</span>
                 </div>
-                <div className="flex items-center text-white">
+                <div className="flex items-center text-black">
                   <BookOpen className="w-5 h-5" />
-                  <span className="ml-1">{totalLessons} lessons</span>
+                  <span className="ml-1">{courseDetails?.data?.number_of_modules} lessons</span>
                 </div>
-                <div className="flex items-center text-white">
+                <div className="flex items-center text-black">
                   <Award className="w-5 h-5" />
-                  <span className="ml-1">{course.level}</span>
+                  <span className="ml-1">{courseDetails?.data?.level}</span>
                 </div>
               </div>
               
-              <div className="flex items-center">
+              {courseDetails?.data?.instructors?.slice(0, 1).map(instructor => (<div className="flex items-center">
                 <img 
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                  alt={course.instructor}
+                  src={instructor?.profile_pic}
+                  alt={instructor?.name}
                   className="w-10 h-10 rounded-full object-cover"
                 />
                 <div className="ml-3">
-                  <p className="text-white font-medium">{course.instructor}</p>
-                  <p className="text-blue-100 text-sm">{course.institution}</p>
+                  <p className="text-black font-medium">{instructor?.name}</p>
+                  <p className="text-black-100 text-sm">{instructor?.university}</p>
                 </div>
               </div>
+            ))}
             </div>
             
             {/* Course Card */}
@@ -213,11 +220,11 @@ const CourseDetailsPage: React.FC = () => {
                 
                 <div className="p-6">
                   <div className="mb-6">
-                    <p className="text-3xl font-bold text-gray-900 mb-1">
+                    <p className="text-3xl font-bold text-black-900 mb-1">
                       {course.price === 'Free' ? 'Free' : `$${course.price}`}
                     </p>
                     {course.price !== 'Free' && (
-                      <p className="text-sm text-gray-600">Full lifetime access</p>
+                      <p className="text-sm text-black-600">Full lifetime access</p>
                     )}
                   </div>
                   
@@ -236,40 +243,6 @@ const CourseDetailsPage: React.FC = () => {
                   <Button variant="outline" fullWidth>
                     Try for Free
                   </Button>
-                  
-                  <div className="mt-6 space-y-3">
-                    <p className="text-sm text-gray-900 font-medium">This course includes:</p>
-                    <div className="flex items-start">
-                      <Video className="w-5 h-5 text-gray-600 mt-0.5" />
-                      <span className="ml-2 text-sm text-gray-700">
-                        {totalLessons} on-demand videos ({formatDuration(totalDuration)})
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <FileText className="w-5 h-5 text-gray-600 mt-0.5" />
-                      <span className="ml-2 text-sm text-gray-700">
-                        12 articles and resources
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <Download className="w-5 h-5 text-gray-600 mt-0.5" />
-                      <span className="ml-2 text-sm text-gray-700">
-                        Downloadable resources
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <Award className="w-5 h-5 text-gray-600 mt-0.5" />
-                      <span className="ml-2 text-sm text-gray-700">
-                        Certificate of completion
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <Calendar className="w-5 h-5 text-gray-600 mt-0.5" />
-                      <span className="ml-2 text-sm text-gray-700">
-                        Flexible learning schedule
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -288,7 +261,7 @@ const CourseDetailsPage: React.FC = () => {
                   className={`pb-4 px-1 mr-8 font-medium ${
                     activeTab === 'about'
                       ? 'text-[#0056D2] border-b-2 border-[#0056D2]'
-                      : 'text-gray-500 hover:text-gray-700'
+                      : 'text-black-500 hover:text-black-700'
                   }`}
                   onClick={() => setActiveTab('about')}
                 >
@@ -298,7 +271,7 @@ const CourseDetailsPage: React.FC = () => {
                   className={`pb-4 px-1 mr-8 font-medium ${
                     activeTab === 'curriculum'
                       ? 'text-[#0056D2] border-b-2 border-[#0056D2]'
-                      : 'text-gray-500 hover:text-gray-700'
+                      : 'text-black-500 hover:text-black-700'
                   }`}
                   onClick={() => setActiveTab('curriculum')}
                 >
@@ -308,7 +281,7 @@ const CourseDetailsPage: React.FC = () => {
                   className={`pb-4 px-1 mr-8 font-medium ${
                     activeTab === 'instructor'
                       ? 'text-[#0056D2] border-b-2 border-[#0056D2]'
-                      : 'text-gray-500 hover:text-gray-700'
+                      : 'text-black-500 hover:text-black-700'
                   }`}
                   onClick={() => setActiveTab('instructor')}
                 >
@@ -320,42 +293,42 @@ const CourseDetailsPage: React.FC = () => {
             {/* Tab Content */}
             {activeTab === 'about' && (
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">About this course</h2>
-                <p className="text-gray-700 mb-6">{course.description}</p>
+                <h2 className="text-2xl font-bold text-black-900 mb-4">About this course</h2>
+                <p className="text-black-700 mb-6">{course.description}</p>
                 
                 <div className="mb-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">What you'll learn</h3>
+                  <h3 className="text-xl font-bold text-black-900 mb-3">What you'll learn</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#0056D2] mt-0.5" />
-                      <span className="ml-2 text-gray-700">Understand core principles and concepts</span>
+                      <span className="ml-2 text-black-700">Understand core principles and concepts</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#0056D2] mt-0.5" />
-                      <span className="ml-2 text-gray-700">Apply techniques to real-world problems</span>
+                      <span className="ml-2 text-black-700">Apply techniques to real-world problems</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#0056D2] mt-0.5" />
-                      <span className="ml-2 text-gray-700">Develop critical thinking skills</span>
+                      <span className="ml-2 text-black-700">Develop critical thinking skills</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#0056D2] mt-0.5" />
-                      <span className="ml-2 text-gray-700">Build your professional portfolio</span>
+                      <span className="ml-2 text-black-700">Build your professional portfolio</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#0056D2] mt-0.5" />
-                      <span className="ml-2 text-gray-700">Master advanced strategies</span>
+                      <span className="ml-2 text-black-700">Master advanced strategies</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-[#0056D2] mt-0.5" />
-                      <span className="ml-2 text-gray-700">Gain industry-relevant expertise</span>
+                      <span className="ml-2 text-black-700">Gain industry-relevant expertise</span>
                     </div>
                   </div>
                 </div>
                 
                 <div className="mb-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Requirements</h3>
-                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <h3 className="text-xl font-bold text-black-900 mb-3">Requirements</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-black-700">
                     <li>Basic understanding of the subject matter</li>
                     <li>No prior advanced knowledge required</li>
                     <li>A computer with internet access</li>
@@ -364,8 +337,8 @@ const CourseDetailsPage: React.FC = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">This course is for</h3>
-                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <h3 className="text-xl font-bold text-black-900 mb-3">This course is for</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-black-700">
                     <li>Beginners looking to learn the fundamentals</li>
                     <li>Intermediate learners who want to solidify their knowledge</li>
                     <li>Professionals seeking to update their skills</li>
@@ -378,8 +351,8 @@ const CourseDetailsPage: React.FC = () => {
             {activeTab === 'curriculum' && (
               <div>
                 <div className="flex justify-between items-center mb-4">
-                  <h2 className="text-2xl font-bold text-gray-900">Course Curriculum</h2>
-                  <div className="text-sm text-gray-600">
+                  <h2 className="text-2xl font-bold text-black-900">Course Curriculum</h2>
+                  <div className="text-sm text-black-600">
                     {totalLessons} lessons ({formatDuration(totalDuration)})
                   </div>
                 </div>
@@ -392,15 +365,15 @@ const CourseDetailsPage: React.FC = () => {
                         onClick={() => toggleSection(section.id)}
                       >
                         <div className="flex items-center">
-                          <BookOpen className="w-5 h-5 text-gray-600 mr-2" />
-                          <h3 className="font-medium text-gray-900">{section.title}</h3>
+                          <BookOpen className="w-5 h-5 text-black-600 mr-2" />
+                          <h3 className="font-medium text-black-900">{section.title}</h3>
                         </div>
                         <div className="flex items-center">
-                          <span className="text-sm text-gray-600 mr-3">
+                          <span className="text-sm text-black-600 mr-3">
                             {section.items.length} lessons • {section.duration}
                           </span>
                           <svg
-                            className={`w-5 h-5 text-gray-600 transform transition-transform ${
+                            className={`w-5 h-5 text-black-600 transform transition-transform ${
                               expandedSections.includes(section.id) ? 'rotate-180' : ''
                             }`}
                             fill="none"
@@ -421,14 +394,14 @@ const CourseDetailsPage: React.FC = () => {
                             >
                               <div className="flex items-center">
                                 {getItemIcon(item.type)}
-                                <span className="ml-2 text-gray-800">{item.title}</span>
+                                <span className="ml-2 text-black-800">{item.title}</span>
                                 {item.id === '1-1' && section.isPreview && (
                                   <span className="ml-2 text-xs bg-blue-100 text-[#0056D2] px-2 py-0.5 rounded-full">
                                     Preview
                                   </span>
                                 )}
                               </div>
-                              <span className="text-sm text-gray-600">{item.duration}</span>
+                              <span className="text-sm text-black-600">{item.duration}</span>
                             </div>
                           ))}
                         </div>
@@ -441,7 +414,7 @@ const CourseDetailsPage: React.FC = () => {
             
             {activeTab === 'instructor' && (
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Instructor</h2>
+                <h2 className="text-2xl font-bold text-black-900 mb-6">Instructor</h2>
                 <div className="flex items-start">
                   <img
                     src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -449,30 +422,30 @@ const CourseDetailsPage: React.FC = () => {
                     className="w-24 h-24 rounded-full object-cover"
                   />
                   <div className="ml-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">{course.instructor}</h3>
-                    <p className="text-gray-600 mb-3">Instructor at {course.institution}</p>
+                    <h3 className="text-xl font-bold text-black-900 mb-1">{course.instructor}</h3>
+                    <p className="text-black-600 mb-3">Instructor at {course.institution}</p>
                     
                     <div className="flex items-center mb-4">
                       <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <span className="ml-1 text-gray-800">4.8 Instructor Rating</span>
+                      <span className="ml-1 text-black-800">4.8 Instructor Rating</span>
                     </div>
                     
                     <div className="flex space-x-4 mb-6">
                       <div className="text-center">
-                        <div className="text-xl font-bold text-gray-900">143</div>
-                        <div className="text-sm text-gray-600">Reviews</div>
+                        <div className="text-xl font-bold text-black-900">143</div>
+                        <div className="text-sm text-black-600">Reviews</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-xl font-bold text-gray-900">23,567</div>
-                        <div className="text-sm text-gray-600">Students</div>
+                        <div className="text-xl font-bold text-black-900">23,567</div>
+                        <div className="text-sm text-black-600">Students</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-xl font-bold text-gray-900">8</div>
-                        <div className="text-sm text-gray-600">Courses</div>
+                        <div className="text-xl font-bold text-black-900">8</div>
+                        <div className="text-sm text-black-600">Courses</div>
                       </div>
                     </div>
                     
-                    <p className="text-gray-700">
+                    <p className="text-black-700">
                       An expert in the field with over 10 years of experience. Specializes in making complex topics accessible to learners of all levels. Passionate about education and helping students achieve their goals.
                     </p>
                   </div>

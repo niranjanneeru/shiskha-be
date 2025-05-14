@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, BookOpen, BarChart, Calendar, Star, Clock } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -6,6 +6,8 @@ import { useCourses } from '../context/CourseContext';
 import EnrolledCourseCard from '../components/common/EnrolledCourseCard';
 import Button from '../components/common/Button';
 import placeholder from '../assets/placeholder.png';
+import logo1 from '../assets/logo1.jpg';
+import { useGetSpecialisationsQuery, useLazyGetCoursesQuery } from '../store/api/codeApi';
 const DashboardPage: React.FC = () => {
   const { user } = useAuth();
   const { enrolledCourses, courses } = useCourses();
@@ -15,6 +17,16 @@ const DashboardPage: React.FC = () => {
     .filter(course => !enrolledCourses.some(ec => ec.id === course.id))
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 3);
+
+    const { data: specialisations } = useGetSpecialisationsQuery();
+    const [getCourses, { data: coursesFromApi }] = useLazyGetCoursesQuery();
+
+    useEffect(() => {
+      if (specialisations) {
+        const specialisationId = specialisations?.[0]?.id;
+        getCourses(specialisationId);
+      }
+    }, [getCourses, specialisations]);
   
   // Calculate overall progress
   const overallProgress = enrolledCourses.length > 0
@@ -130,6 +142,68 @@ const DashboardPage: React.FC = () => {
                 </div>
               )}
             </div>
+
+            {/* Recently Viewed Courses */}
+            <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{specialisations?.[0]?.name}</h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {coursesFromApi?.courses?.slice(0, 4).map(course => (
+                  <Link key={course.id} to={`/course/${course.id}`} className="block group">
+                    <div className="bg-white rounded-lg shadow border hover:shadow-md transition-shadow cursor-pointer">
+                      <div className="relative">
+                        <img
+                          src={course.thumbnail}
+                          alt={course.title}
+                          className="w-full h-48 object-cover rounded-t-lg"
+                        />
+                        {course.isFree && (
+                          <span className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm font-medium">
+                            Free
+                          </span>
+                        )}
+                        {course.tags?.[0] && (
+                          <span className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm font-medium">
+                            + {course.tags[0]}
+                          </span>
+                        )}
+                      </div>
+                      
+                      <div className="p-4">
+                        <div className="flex items-center mb-2">
+                          <img
+                            src={logo1}
+                            alt={course.institution}
+                            className="w-6 h-6 object-contain"
+                          />
+                          <span className="ml-2 text-sm text-gray-600">{course.data?.course_creator?.university}</span>
+                        </div>
+                        
+                        <h3 className="font-medium text-gray-900 mb-2 line-clamp-2 min-h-[48px]">
+                          {course.name}
+                        </h3>
+                        
+                        <div className="text-sm text-gray-600">
+                          {course.type === 'degree' ? (
+                            <div className="flex items-center text-[#0056D2]">
+                              <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                              </svg>
+                              Build toward a degree
+                            </div>
+                          ) : (
+                            <div>
+                              {course.type === 'certificate' ? 'Professional Certificate' : 'Course'}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
           
           {/* Sidebar */}
@@ -143,7 +217,7 @@ const DashboardPage: React.FC = () => {
                   <Link key={course.id} to={`/course/${course.id}`} className="block group">
                     <div className="flex items-start">
                       <img
-                        src={course.thumbnail}
+                        src={"https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600"}
                         alt={course.title}
                         className="w-20 h-16 object-cover rounded-lg"
                       />

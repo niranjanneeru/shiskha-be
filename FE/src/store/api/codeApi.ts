@@ -7,7 +7,7 @@ export const codeApi = createApi({
     baseUrl: import.meta.env.VITE_API_BASE_URL,
     credentials: "include",
     prepareHeaders: (headers: Headers) => {
-      const token = localStorage.getItem("accessToken");
+      const token = localStorage.getItem("token");
       if (token) {
         headers.set("authorization", `Bearer ${token}`);
       }
@@ -33,6 +33,20 @@ export const codeApi = createApi({
     getAssignmentTests: builder.query({
       query: (assignmentId: string) => `/assignments/${assignmentId}/tests`,
     }),
+
+    getSpecialisations: builder.query({
+      query: () => "learning/specialisations",
+    }),
+
+    getCourses: builder.query({
+      query: (specialisationId: string) => `learning/specialisations/${specialisationId}`,
+    }),
+    getCourseDetails: builder.query({
+      query: (courseId: string) => `learning/courses/${courseId}`,
+    }),
+    getCourseContents: builder.query({
+      query: (courseId: string) => `learning/contents/${courseId}`,
+    }),
   }),
 });
 
@@ -40,4 +54,8 @@ export const {
   useSubmitCodeMutation,
   useGetAssignmentTestsQuery,
   useLoginMutation,
+  useGetSpecialisationsQuery,
+  useLazyGetCoursesQuery,
+  useLazyGetCourseDetailsQuery,
+  useLazyGetCourseContentsQuery
 } = codeApi;
