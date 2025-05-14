@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Menu, X, User, LogOut, BookOpen } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
-
-const Header: React.FC = () => {
+import { Search, Menu, X, User, LogOut } from 'lucide-react';
+import shiksha from '../../assets/shiksha.png';
+import placeholder from '../../assets/placeholder.png';
+const Header: React.FC = ({openLogin}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const { isAuthenticated, user, logout } = useAuth();
   const navigate = useNavigate();
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
 
+  const logout = () => {
+    localStorage.removeItem('accessToken');
+    setIsAuthenticated(false);
+  };
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
@@ -27,22 +32,19 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <BookOpen className="w-8 h-8 text-[#0056D2]" />
-            <span className="ml-2 text-xl font-bold text-[#0056D2]">Coursera</span>
-          </Link>
+          <img src={shiksha} alt="logo" className="w-44" />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/courses" className="text-gray-700 hover:text-[#0056D2] transition-colors">
               Explore
             </Link>
-            <Link to="/categories" className="text-gray-700 hover:text-[#0056D2] transition-colors">
+            {/* <Link to="/categories" className="text-gray-700 hover:text-[#0056D2] transition-colors">
               Categories
             </Link>
             <Link to="/about" className="text-gray-700 hover:text-[#0056D2] transition-colors">
               About
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Search Form */}
@@ -68,31 +70,40 @@ const Header: React.FC = () => {
           {/* User Actions */}
           <div className="hidden md:flex items-center space-x-4">
             {isAuthenticated ? (
-              <div className="flex items-center">
-                <Link to="/dashboard" className="flex items-center mr-4">
+              <div className="flex items-center relative">
+                <div 
+                  className="flex items-center mr-4 cursor-pointer"
+                  onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}
+                >
                   <img
-                    src={user?.avatar}
-                    alt={user?.name}
+                    src={placeholder}
+                    alt={"user image"}
                     className="w-8 h-8 rounded-full object-cover"
                   />
-                  <span className="ml-2 font-medium">{user?.name}</span>
-                </Link>
-                <button
-                  onClick={logout}
-                  className="flex items-center text-gray-700 hover:text-red-600 transition-colors"
-                >
-                  <LogOut className="w-5 h-5 mr-1" />
-                  Logout
-                </button>
+                </div>
+                {isProfileDropdownOpen && (
+                  <div className="absolute right-0 top-10 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+                    <Link to="/profile" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</Link>
+                    <Link to="/purchases" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">My Purchases</Link>
+                    <Link to="/settings" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</Link>
+                    <hr className="my-1" />
+                    <button
+                      onClick={logout}
+                      className="block w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="flex items-center space-x-3">
-                <Link
-                  to="/login"
+                <div
+                  onClick={openLogin}
                   className="text-[#0056D2] hover:text-blue-700 transition-colors"
                 >
                   Log In
-                </Link>
+                </div>
                 <Link
                   to="/signup"
                   className="bg-[#0056D2] text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
