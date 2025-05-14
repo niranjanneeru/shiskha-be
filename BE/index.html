@@ -28,7 +28,7 @@
     document.getElementById('pay-btn').addEventListener('click', async () => {
       const resp = await fetch('http://localhost:8000/api/v1/learning/specialisations/register/7', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3NDcxODAyMDZ9.ZLJgpkVUfppWWjvKn1vZp9jKykOxL8ZMM36XEDOUmdM' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' },
         body: JSON.stringify({ amount: 499 })
       });
       const { amount, currency, order_id, razorpay_key_id } = await resp.json();
