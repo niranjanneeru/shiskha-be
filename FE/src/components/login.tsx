@@ -5,11 +5,10 @@ import { useLoginMutation } from '../store/api/codeApi';
 import Button from '../components/common/Button';
 
 interface LoginPopupProps {
-  isOpen: boolean;
   onClose: () => void;
 }
 
-const LoginPage: React.FC<LoginPopupProps> = ({ isOpen, onClose }) => {
+const LoginPage: React.FC<LoginPopupProps> = ({onClose}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -28,6 +27,7 @@ const LoginPage: React.FC<LoginPopupProps> = ({ isOpen, onClose }) => {
     
     try {
       const data = await login({ email, password }).unwrap();
+      console.log(data);
       localStorage.setItem('token', data?.token);
       navigate(redirectPath);
       onClose();
@@ -35,8 +35,6 @@ const LoginPage: React.FC<LoginPopupProps> = ({ isOpen, onClose }) => {
       setError('Invalid email or password. Please try again.');
     }
   };
-
-  if (isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50">

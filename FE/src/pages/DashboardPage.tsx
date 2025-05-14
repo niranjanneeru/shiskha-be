@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import { useCourses } from '../context/CourseContext';
 import EnrolledCourseCard from '../components/common/EnrolledCourseCard';
 import Button from '../components/common/Button';
-
+import placeholder from '../assets/placeholder.png';
 const DashboardPage: React.FC = () => {
   const { user } = useAuth();
   const { enrolledCourses, courses } = useCourses();
@@ -31,8 +31,8 @@ const DashboardPage: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="flex items-center mb-4 md:mb-0">
               <img
-                src={user?.avatar}
-                alt={user?.name}
+                src={placeholder}
+                alt={"user image"}
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div className="ml-4">
