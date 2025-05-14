@@ -7,10 +7,37 @@ from pydantic import BaseModel
 from typing_extensions import TypedDict, Literal
 
 from core.config import config
+from core.ai.transcript_manager import TranscriptManager
 
+def do_rag(message: str, course_id: int = 1) -> str:
+    # Placeholder for RAG function
+    tm = TranscriptManager(config.WEAVIATE_URL)
+    rt_res = tm.most_similar_content(message, course_id=course_id)
+
+    prompt = f"""
+    The user message is:
+    ```
+    {message}
+    ```
+    
+    Additional context for info:
+    ```
+    {rt_res}
+    ```
+    
+    Generate a response to the user message based on the additional context.
+    """
+
+    llm = ChatOpenAI(
+        model="gpt-4o-mini",
+        api_key=config.OPENAI_API_KEY,
+        temperature=0,
+    )
+
+    res = llm.invoke(prompt)
+    return res.content
 
 def intent_identifier(message: str) -> str:
-    print("Debugging")
     class Intent(BaseModel):
         intent: Literal["summary", "course_question", "general_question"]
 
@@ -35,7 +62,7 @@ def intent_identifier(message: str) -> str:
     res = llm.invoke(message)
     return res.intent
 
-def chat(messages: List[str]) -> str:
+def chat(messages: List[str], course_id: int = 1) -> str:
     intent = intent_identifier(messages[-1])
 
     if intent == 'summary':
@@ -43,7 +70,7 @@ def chat(messages: List[str]) -> str:
         return "Summary function called"
     elif intent == 'course_question':
         # Call the course question function here
-        return "Course question function called"
+        return do_rag(messages[-1], course_id)
     else:
         llm = ChatOpenAI(
             model="gpt-4o-mini",
@@ -61,7 +88,7 @@ if __name__ == '__main__':
     messages = [
         "User: What is the capital of France?",
         "Assistant: The capital of France is Paris.",
-        "User: what did I ask last?",
+        "User: what is taught in the current course?",
     ]
     res = chat(messages)
     print(res)

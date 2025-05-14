@@ -29,6 +29,8 @@ class Config(BaseSettings):
     AWS_ACCESS_KEY_ID: str = os.getenv("AWS_ACCESS_KEY_ID")
     AWS_SECRET_ACCESS_KEY: str = os.getenv("AWS_SECRET_ACCESS_KEY")
     AWS_S3_ENDPOINT_URL: str = os.getenv("AWS_S3_ENDPOINT_URL")
+    WEAVIATE_API_KEY: str = os.getenv("WEAVIATE_API_KEY")
+    WEAVIATE_URL: str = os.getenv("WEAVIATE_URL")
 
 
 class TestConfig(Config):
